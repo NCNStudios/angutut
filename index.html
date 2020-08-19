@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CNStudios</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wnoty.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+    <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-installation">Angular Installation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-editor">Text Editor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-project">Angular Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-tips">Tips</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="site-hero" style="background-image: url('https://i.pinimg.com/originals/20/f5/35/20f535c616bbe807a1166e5661b396fd.jpg');" id="section-home" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row intro-text align-items-center justify-content-center">
+                <div class="col-md-10 text-center">
+                    <h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">CNStudios</strong></h1>
+                    <strong class="d-block text-white text-uppercase letter-spacing">
+                        <center>
+                            <script type="text/javascript">
+                            farbbibliothek = new Array();
+                            farbbibliothek[0] = new Array("#FF0000", "#FF1100", "#FF2200", "#FF3300", "#FF4400", "#FF5500", "#FF6600", "#FF7700", "#FF8800", "#FF9900", "#FFaa00", "#FFbb00", "#FFcc00", "#FFdd00", "#FFee00", "#FFff00", "#FFee00", "#FFdd00", "#FFcc00", "#FFbb00", "#FFaa00", "#FF9900", "#FF8800", "#FF7700", "#FF6600", "#FF5500", "#FF4400", "#FF3300", "#FF2200", "#FF1100");
+                            farbbibliothek[1] = new Array("#FF0000", "#FF4000", "#FF8000", "#FFC000", "#FFFF00", "#C0FF00", "#80FF00", "#40FF00", "#00FF00", "#00FF40", "#00FF80", "#00FFC0", "#00FFFF", "#00C0FF", "#0080FF", "#0040FF", "#0000FF", "#4000FF", "#8000FF", "#C000FF", "#FF00FF", "#FF00C0", "#FF0080", "#FF0040");
+                            farbbibliothek[2] = new Array("#FF0000", "#EE0000", "#DD0000", "#CC0000", "#BB0000", "#AA0000", "#990000", "#880000", "#770000", "#660000", "#550000", "#440000", "#330000", "#220000", "#110000", "#000000", "#110000", "#220000", "#330000", "#440000", "#550000", "#660000", "#770000", "#880000", "#990000", "#AA0000", "#BB0000", "#CC0000", "#DD0000", "#EE0000");
+                            farben = farbbibliothek[1];
+
+                            function farbschrift() { for (var b = 0; b < Buchstabe.length; b++) { document.all["a" + b].style.color = farben[b] } farbverlauf() }
+
+                            function string2array(b) {
+                                Buchstabe = new Array();
+                                while (farben.length < b.length) { farben = farben.concat(farben) } k = 0;
+                                while (k <= b.length) {
+                                    Buchstabe[k] = b.charAt(k);
+                                    k++
+                                }
+                            }
+
+                            function divserzeugen() { for (var b = 0; b < Buchstabe.length; b++) { document.write("<span id='a" + b + "' class='a" + b + "'>" + Buchstabe[b] + "</span>") } farbschrift() }
+                            var a = 1;
+
+                            function farbverlauf() {
+                                for (var b = 0; b < farben.length; b++) { farben[b - 1] = farben[b] } farben[farben.length - 1] = farben[-1];
+                                setTimeout("farbschrift()", 30)
+                            }
+                            var farbsatz = 1;
+
+                            function farbtauscher() { farben = farbbibliothek[farbsatz]; while (farben.length < text.length) { farben = farben.concat(farben) } farbsatz = Math.floor(Math.random() * (farbbibliothek.length - 0.0001)) } setInterval("farbtauscher()", 5000);
+
+                            text = "and this is Angular Tutorials Pro Max Ultra Ultimate Plus";
+                            string2array(text);
+                            divserzeugen();
+                            //document.write(text);
+                            </script>
+                        </center>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site-section pt-0" id="section-installation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div class="section-heading text-center">
+                        <h2>Cài đặt <strong>Angular</strong></h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-3" id="b-1-1">1.1. Cài đặt NodeJS + NPM</h2>
+                    <div class="resume-item mb-1">
+                        <span class="date"><i class="fab fa-node-js"></i> NodeJS</span>
+                        <h3>Phiên bản tối thiểu cần cài đặt: <span class="text-danger">8.11</span></h3>
+                        <img src="images/1.png" alt="Image placeholder" class="img-fluid">
+                        <span class="school">Cài đặt phiên bản mới nhất tại:
+                            <a href="https://nodejs.org/en/" target="blank">https://nodejs.org/en/</a>
+                        </span>
+                        <span class="school mb-2 mt-3">Quá trình cài đặt bình thường như những phần mềm khác.
+                            <span class="text-warning">Tuy nhiên cần lưu ý chọn cài đặt đồng thời npm:</span>
+                        </span>
+                        <img src="images/2.png" alt="Image placeholder" class="img-fluid">
+                    </div>
+                    <div class="resume-item">
+                        <h3>Kiểm tra phiên bản đã cài đặt:</h3>
+                        <ul>
+                            <li>Kiểm tra phiên bản node: <span class="text-danger">
+                                    <div class="code_block">
+                                        <span id="cmd-0x">
+                                            node -v
+                                        </span>
+                                        <button class="btn_copy" onclick="copyToClipboard('#cmd-0x')"><i class="far fa-copy"></i></button>
+                                    </div>
+                                </span>
+                            </li>
+                            <li>Kiểm tra phiên bản npm: <span class="text-danger">
+                                    <div class="code_block">
+                                        <span id="cmd-0x1">
+                                            npm -v
+                                        </span>
+                                        <button class="btn_copy" onclick="copyToClipboard('#cmd-0x1')"><i class="far fa-copy"></i></button>
+                                    </div>
+                                </span>
+                            </li>
+                        </ul>
+                        <img src="images/3.png" alt="Image placeholder" width="100%" class="img-fluid mb-4">
+                        <br>
+                        <cite class="block-47-quote-author text-white">&mdash; Tiếp theo <a href="#b-1-2">1.2. Cài đặt Typescript</a></cite>
+                    </div>
+                </div>
+                <div class="col-md-6" id="b-1-2">
+                    <h2 class="mb-3">1.2. Cài đặt Typescript</h2>
+                    <div class="resume-item mb-4">
+                        <span class="date"><i class="fas fa-terminal"></i> Typescript</span>
+                        <div class="code_block">
+                            <span id="cmd-1">
+                                npm install -g typescript
+                            </span>
+                            <button class="btn_copy" onclick="copyToClipboard('#cmd-1')"><i class="far fa-copy"></i></button>
+                        </div>
+                        <img src="images/4.png" alt="Image placeholder" class="img-fluid mb-3">
+                        <cite class="block-47-quote-author text-white">&mdash; Tiếp theo <a href="#b-1-3">1.3. Cài đặt Angular</a></cite>
+                    </div>
+                    <h2 class="mb-3 mt-3" id="b-1-3">1.3. Cài đặt Angular</h2>
+                    <div class="resume-item mb-1">
+                        <span class="date"><i class="fab fa-angular"></i> Angular</span>
+                        <h3>Phiên bản lớn nhất được cài đặt: <span class="text-danger">9.X.X</span></h3>
+                        <span class="school">Kiểm tra tại:
+                            <a href="https://npmjs.com/package/@angular/cli?activeTab=versions" target="blank">https://npmjs.com/package/@angular/cli?activeTab=versions</a>
+                        </span>
+                        <div class="v-line"></div>
+                        <h3 class="mt-2">Khuyên dùng: <span class="text-danger">v9.1.12</span></h3>
+                        <span class="school">
+                            <a href="https://www.npmjs.com/package/@angular/cli/v/9.1.12" target="blank">https://www.npmjs.com/package/@angular/cli/v/9.1.12</a>
+                        </span>
+                        <div class="code_block">
+                            <span id="cmd-2">
+                                npm i @angular/cli@9.1.12
+                            </span>
+                            <button class="btn_copy" onclick="copyToClipboard('#cmd-2')"><i class="far fa-copy"></i></button>
+                        </div>
+                    </div>
+                    <div class="resume-item mb-1">
+                        <h3>Kiểm tra phiên bản đã cài đặt:</h3>
+                        <ul>
+                            <li>Kiểm tra phiên bản node: <span class="text-danger">
+                                    <div class="code_block">
+                                        <span id="cmd-3">
+                                            ng v
+                                        </span>
+                                        <button class="btn_copy" onclick="copyToClipboard('#cmd-3')"><i class="far fa-copy"></i></button>
+                                    </div>
+                                </span>
+                            </li>
+                        </ul>
+                        <img src="images/5.png" alt="Image placeholder" class="img-fluid mb-4">
+                        <cite class="block-47-quote-author text-white">&mdash; Tiếp theo <a href="#section-editor">2. Text Editor</a></cite>
+                    </div>
+                    <div class="resume-item">
+                        <br>
+                        <br>
+                        <br>
+                        <span>
+                            <i class="fas fa-hand-point-left"></i> Chổ này là để cho nó bằng cái block bên trái thôi
+                            <img src="images/e/1.png" class="img-fluid" width="25px">
+                        </span>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- .section -->
+    <!-- .section -->
+    <section class="site-section pt-0 pb-0" id="section-editor">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-2">
+                    <div class="section-heading text-center">
+                        <h2>Trình <strong>soạn thảo</strong></h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row mb-5 align-items-center">
+                        <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+                            <img src="images/6.png" alt="Image placeholder" class="img-fluid">
+                        </div>
+                        <div class="col-lg-5 pl-lg-5">
+                            <div class="section-heading">
+                                <h2 style="padding-top: 0 !important;">2.1 Visual Studio <strong>Code</strong></h2>
+                            </div>
+                            <p class="lead text-white">
+                                Thí chủ có thể lập trình bằng bất cứ editor nào cũng được…như Notepad chẳng hạn
+                                <img src="images/e/2.png" class="img-fluid" width="25px">
+                            </p>
+                            <p class="lead mb-2 text-white">
+                                Tuy nhiên đối với lập trình Angular thì thí chủ phải dùng VSCode
+                            </p>
+                            <span class="school">Download em nó tại đây:
+                                <a href="https://code.visualstudio.com/" target="blank">https://code.visualstudio.com/</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <h2 class="mb-3">2.2. Extension</h2>
+                    <span class="text-white">Gần như là bắt buộc phải cài các extension này để <span class="text-warning">tránh gây bất hoà</span> khi cho người khác đọc code
+                        <img src="images/e/3.png" class="img-fluid" width="25px">
+                    </span> <br>
+                    <span class="text-white">Phím tắt: <span class="text-warning">Ctrl + Shift + X</span> hoặc click vào icon 4 ô vuông trên thanh công cụ bên trái.
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <div class="resume-item mb-4">
+                        <span class="school mb-3">
+                            <h4><i class="fas fa-shapes"></i> SCSS Formatter</h4>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter" target="blank">
+                                Open Marketplace <i class="fas fa-link"></i>
+                            </a>
+                        </span>
+                        <img src="images/7.png" alt="Image placeholder" class="img-fluid mb-4">
+                        <p class="text-white">Nói chung là cái tiện ích này nó giúp cho SCSS gọn gàn hơn, ngay hàng thẳng lối.</p>
+                        <span class="text-white"><i class="far fa-keyboard"></i> Phím tắt: </span><span class="text-warning"> Alt + Shift + F</span>
+                    </div>
+                    <div class="resume-item mb-4">
+                        <span class="school mb-3">
+                            <h4><i class="fas fa-shapes"></i> ESLint</h4>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="blank">
+                                Open Marketplace <i class="fas fa-link"></i>
+                            </a>
+                        </span>
+                        <img src="images/9.png" alt="Image placeholder" class="img-fluid mb-4">
+                        <p class="text-white">
+                            Cái này cũng để phân tích sửa lỗi, nó với TSLint mà song kiếm hợp bích là chuẩn bài để code rồi <img src="images/e/3.png" class="img-fluid" width="25px">
+                        </p>
+                        <span class="text-white"><i class="fas fa-circle-notch fa-spin"></i> Cách dùng: </span> <a href="#"><span class="text-warning">Cũng xem cái này nè! </span></a><img src="images/e/7.png" class="img-fluid" width="25px">
+                        <p style="margin-bottom: 0.3em"></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="resume-item mb-4">
+                        <span class="school mb-3">
+                            <h4><i class="fas fa-shapes"></i> TSLint (deprecated)</h4>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=eg2.tslint" target="blank">
+                                Open Marketplace <i class="fas fa-link"></i>
+                            </a>
+                        </span>
+                        <img src="images/8.png" alt="Image placeholder" class="img-fluid mb-4">
+                        <p class="text-white">
+                            Cái này để phân tích sửa lỗi cấu trúc của Typescript. Không cài cái này mà code thì
+                            <img src="images/e/4.png" class="img-fluid" width="25px">
+                            . Đưa code cho người khác đọc thì
+                            <img src="images/e/5.png" class="img-fluid" width="25px">
+                        </p>
+                        <span class="text-white"><i class="fas fa-circle-notch fa-spin"></i> Cách dùng: </span> <a href="#"><span class="text-warning">Xem cái này nè!</span></a>
+                    </div>
+                    <div class="resume-item mb-4">
+                        <span class="school mb-3">
+                            <h4><i class="fas fa-shapes"></i> Material Icon Theme</h4>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="blank">
+                                Open Marketplace <i class="fas fa-link"></i>
+                            </a>
+                        </span>
+                        <img src="images/10.png" alt="Image placeholder" class="img-fluid mb-4">
+                        <p class="text-white">
+                            Cái này để thay đổi icon của file trên cây thư mục cho dễ nhận biết thui. Không cài cũng được
+                            <img src="images/e/1.png" class="img-fluid" width="25px">
+                        </p>
+                        <span class="text-white"><i class="fas fa-circle-notch fa-spin"></i> Cách dùng: </span><span class="text-warning">Làm gì có cách dùng <img src="images/e/6.png" class="img-fluid" width="25px"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- .section -->
+    <div class="section-heading pt-0 text-center">
+        <h2>Các bước cài đặt đến đây là hết! Chúc bạn may mắn lần sau <img src="images/e/6.png" class="img-fluid" width="35px"></h2>
+    </div>
+    <section class="site-section" id="section-project">
+        <div class="container">
+        	<div class="row">
+                <div class="col-md-12 mb-2">
+                    <div class="section-heading text-center">
+                        <h2>Project <strong>Angular</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+                    <img src="images/11.png" alt="Image placeholder" class="img-fluid">
+                </div>
+                <div class="col-lg-5 pl-lg-5">
+                    <div class="section-heading">
+                        <h2 style="padding-top: 0 !important;">3.1 Tạo project <strong>Mới</strong></h2>
+                    </div>
+                    <p class="lead text-white">
+                        Chúng tôi từ chối hiểu trường hợp này
+                        <img src="images/e/1.png" class="img-fluid" width="25px">
+                    </p>
+                    <p class="lead mb-2 text-white">
+                        Lên Google tìm cách nhé! Cơ mà tặng cho cái link luôn này:
+                    </p>
+                    <span class="school">
+                        <a href="https://www.google.com/search?q=angular+material" target="blank">https://www.google.com/search?q=angular+material</a>
+                        <img src="images/e/8.png" class="img-fluid" width="25px">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <div class="section-heading text-center">
+                        <h2>Client <strong>Testimonial</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="block-47 d-flex mb-5">
+                        <div class="block-47-image">
+                            <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid">
+                        </div>
+                        <blockquote class="block-47-quote">
+                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            <cite class="block-47-quote-author">&mdash; Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="block-47 d-flex mb-5">
+                        <div class="block-47-image">
+                            <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">
+                        </div>
+                        <blockquote class="block-47-quote">
+                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            <cite class="block-47-quote-author">&mdash; Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="block-47 d-flex mb-5">
+                        <div class="block-47-image">
+                            <img src="images/person_3.jpg" alt="Image placeholder" class="img-fluid">
+                        </div>
+                        <blockquote class="block-47-quote">
+                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            <cite class="block-47-quote-author">&mdash; Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="block-47 d-flex mb-5">
+                        <div class="block-47-image">
+                            <img src="images/person_4.jpg" alt="Image placeholder" class="img-fluid">
+                        </div>
+                        <blockquote class="block-47-quote">
+                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            <cite class="block-47-quote-author">&mdash; Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site-section pb-0" id="section-tips">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="section-heading text-center">
+                        <h2>Mẹo <strong>Angular</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 text-center mb-5">
+                    <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <span class="icon-browser2"></span>
+                        </span>
+                        <h3 class="mb-4">Web Design</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center mb-5">
+                    <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <span class="icon-presentation"></span>
+                        </span>
+                        <h3 class="mb-4">Search Engine Optimization</h3>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center mb-5">
+                    <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <span class="icon-video2"></span>
+                        </span>
+                        <h3 class="mb-4">Video Editing</h3>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                        <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site-section" id="section-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div class="section-heading text-center">
+                        <h2>Blog on <strong>Medium</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="blog-entry">
+                        <a href="#"><img src="images/post_1.jpg" alt="Image placeholder" class="img-fluid"></a>
+                        <div class="blog-entry-text">
+                            <h3><a href="#">Creative Product Designer From Facebook</a></h3>
+                            <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                            <div class="meta">
+                                <a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+                                <a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="blog-entry">
+                        <a href="#"><img src="images/post_2.jpg" alt="Image placeholder" class="img-fluid"></a>
+                        <div class="blog-entry-text">
+                            <h3><a href="#">Creative Product Designer From Facebook</a></h3>
+                            <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                            <div class="meta">
+                                <a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+                                <a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="blog-entry">
+                        <a href="#"><img src="images/post_3.jpg" alt="Image placeholder" class="img-fluid"></a>
+                        <div class="blog-entry-text">
+                            <h3><a href="#">Creative Product Designer From Facebook</a></h3>
+                            <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                            <div class="meta">
+                                <a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+                                <a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site-section" id="section-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div class="section-heading text-center">
+                        <h2>Get <strong>In Touch</strong></h2>
+                    </div>
+                </div>
+                <div class="col-md-7 mb-5 mb-md-0">
+                    <form action="" class="site-form">
+                        <h3 class="mb-5">Get In Touch</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-control px-3 py-4" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control px-3 py-4" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control px-3 py-4" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group mb-5">
+                            <textarea class="form-control px-3 py-4" cols="30" rows="10" placeholder="Write a Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 pl-md-5">
+                    <h3 class="mb-5">My Contact Details</h3>
+                    <ul class="site-contact-details">
+                        <li>
+                            <span class="text-uppercase">Email</span>
+                            site@gmail.com
+                        </li>
+                        <li>
+                            <span class="text-uppercase">Phone</span>
+                            +30 976 1382 9921
+                        </li>
+                        <li>
+                            <span class="text-uppercase">Fax</span>
+                            +30 976 1382 9922
+                        </li>
+                        <li>
+                            <span class="text-uppercase">Address</span>
+                            San Francisco, CA <br>
+                            4th Floor8 Lower <br>
+                            San Francisco street, M1 50F
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row mb-5">
+                <p class="col-12 text-center">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy; <script>
+                    document.write(new Date().getFullYear());
+                    </script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <a href="#" class="social-item"><span class="icon-facebook2"></span></a>
+                        <a href="#" class="social-item"><span class="icon-twitter"></span></a>
+                        <a href="#" class="social-item"><span class="icon-instagram2"></span></a>
+                        <a href="#" class="social-item"><span class="icon-linkedin2"></span></a>
+                        <a href="#" class="social-item"><span class="icon-vimeo"></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.easing.1.3.js"></script>
+    <script src="js/vendor/jquery.stellar.min.js"></script>
+    <script src="js/vendor/jquery.waypoints.min.js"></script>
+    <script src="js/wnoty.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        showNoti($(element).text());
+    }
+
+    function showNoti(text) {
+        $.wnoty({
+            type: 'success',
+            message: 'Copied: ' + text,
+            autohideDelay: 3000
+        });
+    }
+    </script>
+</body>
+
+</html>
