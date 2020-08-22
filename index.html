@@ -4,7 +4,7 @@
 <head>
     <title>CNStudios</title>
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="images/e/1.png"/>
+    <link rel="icon" type="image/png" href="images/e/1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/flexslider.css">
@@ -16,13 +16,14 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.1.0/dist/css/mstepper.min.css">
 </head>
 
-<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="100">
     <section class="site-hero" style="background-image: url('https://i.pinimg.com/originals/20/f5/35/20f535c616bbe807a1166e5661b396fd.jpg');" id="section-home" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row intro-text align-items-center justify-content-center">
-                <div class="col-md-10 text-center">
+                <div class="col-md-10 text-center" style="margin-top: -6em;">
                     <h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">CNStudios</strong></h1>
                     <strong class="d-block text-white text-uppercase letter-spacing">
                         <center>
@@ -93,18 +94,14 @@
                         <ul>
                             <li>Kiểm tra phiên bản node: <span class="text-danger">
                                     <div class="code_block">
-                                        <span id="cmd-0x">
-                                            node -v
-                                        </span>
+                                        <span id="cmd-0x">node -v</span>
                                         <button class="btn_copy" onclick="copyToClipboard('#cmd-0x')"><i class="far fa-copy"></i></button>
                                     </div>
                                 </span>
                             </li>
                             <li>Kiểm tra phiên bản npm: <span class="text-danger">
                                     <div class="code_block">
-                                        <span id="cmd-0x1">
-                                            npm -v
-                                        </span>
+                                        <span id="cmd-0x1">npm -v</span>
                                         <button class="btn_copy" onclick="copyToClipboard('#cmd-0x1')"><i class="far fa-copy"></i></button>
                                     </div>
                                 </span>
@@ -120,9 +117,7 @@
                     <div class="resume-item mb-4">
                         <span class="date"><i class="fas fa-terminal"></i> Typescript</span>
                         <div class="code_block">
-                            <span id="cmd-1">
-                                npm install -g typescript
-                            </span>
+                            <span id="cmd-1">npm install -g typescript</span>
                             <button class="btn_copy" onclick="copyToClipboard('#cmd-1')"><i class="far fa-copy"></i></button>
                         </div>
                         <img src="images/4.png" alt="Image placeholder" class="img-fluid mb-3">
@@ -141,9 +136,7 @@
                             <a href="https://www.npmjs.com/package/@angular/cli/v/9.1.12" target="blank">https://www.npmjs.com/package/@angular/cli/v/9.1.12</a>
                         </span>
                         <div class="code_block">
-                            <span id="cmd-2">
-                                npm i @angular/cli@9.1.12
-                            </span>
+                            <span id="cmd-2">npm install -g @angular/cli@9.1.12</span>
                             <button class="btn_copy" onclick="copyToClipboard('#cmd-2')"><i class="far fa-copy"></i></button>
                         </div>
                     </div>
@@ -152,9 +145,7 @@
                         <ul>
                             <li>Kiểm tra phiên bản node: <span class="text-danger">
                                     <div class="code_block">
-                                        <span id="cmd-3">
-                                            ng v
-                                        </span>
+                                        <span id="cmd-3">ng v</span>
                                         <button class="btn_copy" onclick="copyToClipboard('#cmd-3')"><i class="far fa-copy"></i></button>
                                     </div>
                                 </span>
@@ -366,6 +357,79 @@
                         <img src="images/Untitled Diagram.svg" alt="Image placeholder" class="img-fluid mb-4" width="100%">
                     </div>
                 </div>
+                <div class="col-md-12">
+                    <div class="resume-item mb-2">
+                        <span class="school mb-4">
+                            <h4><i class="fas fa-plus-circle fa-spin"></i> Thêm một <span class="text-warning">trang</span> mới</h4>
+                            <h3>Các bước tạo module chức năng mới:</h3>
+                            <ul class="stepper vertical">
+                                <li class="step" id="step-1">
+                                    <div class="step-title waves-effect">Tạo module</div>
+                                    <div class="step-content">
+                                        <span>Vị trí thư mục: </span><span class="text-warning">/app/modules</span>
+                                        <div class="code_block">
+                                            <span id="cmd-4" class="d-none">ng g m modules/abcd --routing</span>
+                                            <span>ng g <span class="text-warning font-weight-bold">m </span> modules/<span class="text-warning font-weight-bold">abcd</span> --routing</span>
+                                            <a class="btn_copy pt-1" onclick="copyToClipboard('#cmd-4')"><i class="far fa-copy"></i></a>
+                                        </div>
+                                        <span class="pt-3">Trong đó:</span>
+                                        <ul>
+                                            <li>● <span class="text-warning">ng: </span> Lệnh gọi Angular</li>
+                                            <li>● <span class="text-warning">g: </span> generate</li>
+                                            <li>● <span class="text-warning">m: </span> module</li>
+                                            <li>● <span class="text-warning">modules/: </span> Thư mục modules</li>
+                                            <li>● <span class="text-warning">abcd: </span> Tên module</li>
+                                            <li>● <span class="text-warning">--routing: </span> Tuỳ chọn tạo route cho module (Tuỳ chọn này sẽ tạo ra 2 file: abcd.module.ts & abcd-routing.module.ts)</li>
+                                        </ul>
+                                        <img src="images/14.png" alt="Image placeholder" class="img-fluid mb-4 mt-3" width="100%">
+                                        <p>Thư mục sau khi thực hiện:</p>
+                                        <img src="images/15.png" alt="Image placeholder" class="img-fluid mb-4 mt-1">
+                                        <div class="step-actions">
+                                            <button class="waves-effect waves-dark btn next-step" onclick="scrollToId('#step-1')">CONTINUE</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="step" id="step-2">
+                                    <div class="step-title waves-effect">Tạo component</div>
+                                    <div class="step-content">
+                                        <span>Vị trí thư mục: </span><span class="text-warning">/app/modules</span>
+                                        <div class="code_block">
+                                            <span id="cmd-5" class="d-none">ng g c modules/abcd</span>
+                                            <span>ng g <span class="text-warning font-weight-bold">c </span> modules/<span class="text-warning font-weight-bold">abcd</span></span>
+                                            <a class="btn_copy pt-1" onclick="copyToClipboard('#cmd-5')"><i class="far fa-copy"></i></a>
+                                        </div>
+                                        <span class="pt-3">Trong đó:</span>
+                                        <ul>
+                                            <li>● <span class="text-warning">ng: </span> Lệnh gọi Angular</li>
+                                            <li>● <span class="text-warning">g: </span> generate</li>
+                                            <li>● <span class="text-warning">c: </span> component</li>
+                                            <li>● <span class="text-warning">modules/: </span> Thư mục modules</li>
+                                            <li>● <span class="text-warning">abcd: </span> Tên module</li>
+                                        </ul>
+                                        <img src="images/16.png" alt="Image placeholder" class="img-fluid mb-4 mt-3" width="100%">
+                                        <p>Thư mục sau khi thực hiện:</p>
+                                        <img src="images/17.png" alt="Image placeholder" class="img-fluid mb-4 mt-1">
+                                        <div class="step-actions">
+                                            <button class="waves-effect waves-dark btn previous-step">BACK</button>
+                                            <button class="waves-effect waves-dark btn next-step" onclick="scrollToId('#step-2')">CONTINUE</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="step">
+                                    <div class="step-title waves-effect">E-mail</div>
+                                    <div class="step-content">
+                                        <!-- Your step content goes here (like inputs or so) -->
+                                        <div class="step-actions">
+                                            <!-- Here goes your actions buttons -->
+                                            <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
+                                            <button class="waves-effect waves-dark btn previous-step">BACK</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -575,13 +639,13 @@
             </div>
         </div>
     </section>
-    <div class="menu-block" style="position: fixed; bottom: 2em; right: 2em;">
+    <div class="menu-block" style="position: fixed; bottom: 2em; right: 2em; z-index: 99;">
         <nav class="menu-nav">
             <a class="menu-nav__link" href="#section-home">Home</a>
             <a class="menu-nav__link" href="#section-installation">Angular Installation</a>
             <a class="menu-nav__link" href="#section-editor">Text Editor</a>
             <a class="menu-nav__link" href="#section-project">Angular Project</a>
-            <a class="menu-nav__link" href="#section-tips">Tips</a>
+            <a class="menu-nav__link" href="#section-tips">Rules and Tips</a>
         </nav>
         <a href="javascript:void(0)" class="menu-btn">
             <span></span>
@@ -623,6 +687,7 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/materialize-stepper@3.1.0/dist/js/mstepper.min.js"></script>
     <script>
     function copyToClipboard(element) {
         var $temp = $("<input>");
@@ -640,6 +705,19 @@
             autohideDelay: 3000
         });
     }
+
+    function scrollToId(id) {
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 300);
+    }
+    </script>
+    <script>
+    var stepper = document.querySelector('.stepper');
+    var stepperInstace = new MStepper(stepper, {
+        firstActive: 0,
+        stepTitleNavigation: true,
+    })
     </script>
 </body>
 
