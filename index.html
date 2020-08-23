@@ -382,6 +382,49 @@
                 <div class="col-md-12">
                     <div class="resume-item mb-2">
                         <span class="school mb-4">
+                            <h4><i class="fas fa-cog fa-spin"></i> Chạy <span class="text-warning">website</span></h4>
+                        </span>
+                        <span class="text-white mb-2">Sau khi tạo lại thư mục node_modules, có thể chạu ngay web lên mà không cần suy nghĩ <img src="images/e/10.png" class="img-fluid" width="25px"></span>
+                        <center>
+                            <img src="images/20.png" alt="Image placeholder" class="img-fluid mb-4 mt-3" width="70%">
+                        </center>                        
+                        <div class=" mt-2">
+                            <h3>Build web dạng thường</h3>
+                            <div class="code_block">
+                                <span id="cmd-7">ng serve --open</span>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-7')"><i class="far fa-copy"></i></button>
+                            </div>
+                            <span class="pt-3">Trong đó:</span>
+                            <ul>
+                                <li class="text-white"><span class="text-warning">--open: </span> Tự động mở website sau khi build xong</li>
+                            </ul>
+                            <br>
+                            <h3>Build web ở port khác (Mặc định port 4200)</h3>
+                            <div class="code_block">
+                                <span id="cmd-9">ng serve --port 1234 --open</span>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-9')"><i class="far fa-copy"></i></button>
+                            </div>
+                            <br>
+                            <h3>Build web theo ngôn ngữ</h3>
+                            <div class="code_block">
+                                <span id="cmd-10">ng serve --configuration=production-vi --port 4200 --open</span>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-10')"><i class="far fa-copy"></i></button>
+                            </div>
+                            <div class="code_block">
+                                <span id="cmd-11">ng serve --configuration=production-en --port 4200 --open</span>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-11')"><i class="far fa-copy"></i></button>
+                            </div>
+                            <span class="pt-3">Trong đó:</span>
+                            <ul>
+                                <li class="text-white"><span class="text-warning">--configuration=production-vi: </span> Build web với ngôn ngữ tiếng việt (Link web sẽ thành: http://localhost:4200/vi/)</li>
+                                <li class="text-white"><span class="text-warning">--configuration=production-en: </span> Build web với ngôn ngữ tiếng anh (Link web sẽ thành: http://localhost:4200/en/)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="resume-item mb-2">
+                        <span class="school mb-4">
                             <h4><i class="fas fa-plus-circle fa-spin"></i> Thêm một <span class="text-warning">trang</span> mới</h4>
                             <h3>Các bước tạo module chức năng mới:</h3>
                             <ul class="stepper vertical">
@@ -437,7 +480,6 @@
                                         </div>
                                     </div>
                                 </li>
-                                
                                 <li class="step" id="step-3">
                                     <div class="step-title waves-effect">Edit file <span class="text-warning">abcd.module.ts</span></div>
                                     <div class="step-content">
@@ -473,7 +515,6 @@ export class AbcdModule { }
                                         </div>
                                     </div>
                                 </li>
-
                                 <li class="step" id="step-4">
                                     <div class="step-title waves-effect">Edit file <span class="text-warning">abcd-routing.module.ts</span></div>
                                     <div class="step-content">
@@ -528,7 +569,6 @@ export class AbcdRoutingModule { }
                                         </div>
                                     </div>
                                 </li>
-
                                 <li class="step" id="step-5">
                                     <div class="step-title waves-effect">Edit file <span class="text-warning">app-routing.module.ts</span></div>
                                     <div class="step-content">
@@ -574,7 +614,6 @@ export class AppRoutingModule { }
                                         <span>Đến bước này thì khó có thể hướng dẫn tường tận nữa bởi mỗi module thì lại lập trình một cách khác nhau <img src="images/e/3.png" class="img-fluid" width="25px"> Google được sinh ra để làm tiếp nhiệm vụ thiên liêng và cao cả này <img src="images/e/6.png" class="img-fluid" width="25px"> </span>
                                         <br>
                                         <span>Fighting! <img src="images/e/8.png" class="img-fluid" width="25px"></span>
-                                        
                                         <div class="step-actions">
                                             <button class="waves-effect waves-dark btn previous-step">BACK</button>
                                         </div>
@@ -885,21 +924,21 @@ export class AppRoutingModule { }
             lineNumbers: true,
             mode: 'javascript',
             theme: 'material-darker',
-            autoRefresh:true,
+            autoRefresh: true,
             scrollbarStyle: 'overlay'
         });
         var editor2 = CodeMirror.fromTextArea(document.getElementById("code2"), {
             lineNumbers: true,
             mode: 'javascript',
             theme: 'material-darker',
-            autoRefresh:true,
+            autoRefresh: true,
             scrollbarStyle: 'overlay'
         });
         var editor3 = CodeMirror.fromTextArea(document.getElementById("code3"), {
             lineNumbers: true,
             mode: 'javascript',
             theme: 'material-darker',
-            autoRefresh:true,
+            autoRefresh: true,
             scrollbarStyle: 'overlay'
         });
     });
