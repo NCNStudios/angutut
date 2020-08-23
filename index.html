@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.1.0/dist/css/mstepper.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.css'>
+    <link rel='stylesheet' href='lib/codemirror/material-darker.css'>
+    <link rel='stylesheet' href='lib/codemirror/simplescrollbars.css'>
 </head>
 
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="100">
@@ -350,7 +353,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="resume-item mb-2">
+                    <div class="resume-item mb-4">
                         <span class="school mb-4">
                             <h4><i class="fab fa-osi fa-spin"></i> Thư mục <span class="text-warning">src</span> và đàn em của nó</h4>
                         </span>
@@ -360,11 +363,30 @@
                 <div class="col-md-12">
                     <div class="resume-item mb-2">
                         <span class="school mb-4">
+                            <h4><i class="fas fa-cog fa-spin"></i> Cài đặt lại thư mục <span class="text-warning">node_modules</span></h4>
+                        </span>
+                        <span class="text-white mb-2">Thư mục node_modules có dung lượng rất lớn so với toàn bộ dung lượng của source code. Mũ 2 source lên rồi nhân cho 100 nhiều khi còn không bằng <img src="images/e/10.png" class="img-fluid" width="25px"></span>
+                        <div class="row">
+                            <img src="images/18.png" alt="Image placeholder" class="img-fluid mb-4 mt-3 col-md-6" width="100%">
+                            <div class="col-md-6 mt-2">
+                                <div class="code_block">
+                                    <span id="cmd-6">npm install</span>
+                                    <button class="btn_copy" onclick="copyToClipboard('#cmd-6')"><i class="far fa-copy"></i></button>
+                                </div>
+                                <p class="text-white mt-3">Thư mục sau khi thực hiện:</p>
+                                <img src="images/19.png" alt="Image placeholder" class="img-fluid mb-4 mt-1" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="resume-item mb-2">
+                        <span class="school mb-4">
                             <h4><i class="fas fa-plus-circle fa-spin"></i> Thêm một <span class="text-warning">trang</span> mới</h4>
                             <h3>Các bước tạo module chức năng mới:</h3>
                             <ul class="stepper vertical">
                                 <li class="step" id="step-1">
-                                    <div class="step-title waves-effect">Tạo module</div>
+                                    <div class="step-title waves-effect">Tạo <span class="text-warning">module</span></div>
                                     <div class="step-content">
                                         <span>Vị trí thư mục: </span><span class="text-warning">/app/modules</span>
                                         <div class="code_block">
@@ -390,7 +412,7 @@
                                     </div>
                                 </li>
                                 <li class="step" id="step-2">
-                                    <div class="step-title waves-effect">Tạo component</div>
+                                    <div class="step-title waves-effect">Tạo <span class="text-warning">component</span></div>
                                     <div class="step-content">
                                         <span>Vị trí thư mục: </span><span class="text-warning">/app/modules</span>
                                         <div class="code_block">
@@ -415,13 +437,145 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="step">
-                                    <div class="step-title waves-effect">E-mail</div>
+                                
+                                <li class="step" id="step-3">
+                                    <div class="step-title waves-effect">Edit file <span class="text-warning">abcd.module.ts</span></div>
                                     <div class="step-content">
-                                        <!-- Your step content goes here (like inputs or so) -->
+                                        <div class="code-container">
+                                            <textarea id="code">
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+// Các module dùng chung cho các component
+import { SharedModule } from 'src/app/shared/shared.module';
+
+// Layout mà module sẽ thừa kế
+import { AdminLayoutModule } from 'src/app/layouts/admin/admin-layout.module';
+
+import { AbcdRoutingModule } from './abcd-routing.module';
+import { AbcdComponent } from './abcd.component';
+
+@NgModule({
+  declarations: [AbcdComponent],
+  imports: [
+    CommonModule,
+    HomeRoutingModule,
+    SharedModule,
+    AdminLayoutModule
+  ]
+})
+export class AbcdModule { }
+                                            </textarea>
+                                        </div>
                                         <div class="step-actions">
-                                            <!-- Here goes your actions buttons -->
-                                            <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
+                                            <button class="waves-effect waves-dark btn previous-step">BACK</button>
+                                            <button class="waves-effect waves-dark btn next-step" onclick="scrollToId('#step-3')">CONTINUE</button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="step" id="step-4">
+                                    <div class="step-title waves-effect">Edit file <span class="text-warning">abcd-routing.module.ts</span></div>
+                                    <div class="step-content">
+                                        <div class="code-container">
+                                            <textarea id="code2">
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+// Layout mà module này sẽ thừa kế
+import { AdminLayoutModule } from 'src/app/layouts/admin/admin-layout.module';
+import { AdminLayoutComponent } from 'src/app/layouts/admin/admin-layout/admin-layout.component';
+
+// Component của module
+import { AbcdComponent } from './abcd.component';
+import { AbcdDetailComponent } from './abcd-detail.component';
+
+// Phương thức xác thực
+import { AuthGuard } from 'src/app/core/guard/auth.guard';
+
+// Route
+const routes: Routes = [
+  {
+    path: '',
+    component: AdminLayoutComponent, // Layout thừa kế
+    children: [
+
+      // Component con, trường hợp vào thẳng. VD: http://localhost:4200/abcd
+      { path: '', component: AbcdComponent },
+
+      // Component con, trường hợp có param. VD: http://localhost:4200/abcd/2541d5s15w1sa4421sd4
+      { path: ':id', component: AbcdDetailComponent }
+
+    ],
+    canActivate: [AuthGuard], // Yêu cầu đăng nhập, nếu không yêu cầu đăng nhập thì bỏ 2 dòng này
+    data: { roles: ['ACTIVITI_ADMIN'] } // Quyền cần có
+  }
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forChild(routes),
+    AdminLayoutModule
+  ],
+  exports: [RouterModule]
+})
+export class AbcdRoutingModule { }
+                                            </textarea>
+                                        </div>
+                                        <div class="step-actions">
+                                            <button class="waves-effect waves-dark btn previous-step">BACK</button>
+                                            <button class="waves-effect waves-dark btn next-step" onclick="scrollToId('#step-4')">CONTINUE</button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="step" id="step-5">
+                                    <div class="step-title waves-effect">Edit file <span class="text-warning">app-routing.module.ts</span></div>
+                                    <div class="step-content">
+                                        <span>File <span class="text-warning">app-routing.module.ts</span> là file định nghĩa tất cả các route cho website.</span>
+                                        <div class="code-container mt-3">
+                                            <textarea id="code3">
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { environment } from 'env/environment';
+
+const routes: Routes = [
+  {
+    // Result: http://localhost:4200/abcd
+    path: 'abcd',
+
+    // Đường dẫn đến file abcd.module.ts
+    loadChildren: () => import('modules/abcd/abcd.module').then(m => m.AbcdModule)
+  },
+  { 
+    path: 'error', loadChildren: () => import('modules/error/error.module').then(m => m.ErrorModule)
+  },
+  { path: '**', redirectTo: 'error/page-not-found' }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes, environment.routerConfig)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+
+                                            </textarea>
+                                        </div>
+                                        <span>Sau khi thực hiện bước này, truy cập thử vào route đã chọn: <span class="text-warning">http://localhost:4200/abcd</span> để xem kết quả. Nếu website hiển thị: <span class="text-warning">abcd works!</span> thì cung xỉa, bạn đã hoàn thành! <img src="images/e/2.png" class="img-fluid" width="25px"></span>
+                                        <div class="step-actions">
+                                            <button class="waves-effect waves-dark btn previous-step">BACK</button>
+                                            <button class="waves-effect waves-dark btn next-step" onclick="scrollToId('#step-5')">CONTINUE</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="step" id="step-6">
+                                    <div class="step-title waves-effect">Lập trình <span class="text-warning">time</span></div>
+                                    <div class="step-content">
+                                        <span>Đến bước này thì khó có thể hướng dẫn tường tận nữa bởi mỗi module thì lại lập trình một cách khác nhau <img src="images/e/3.png" class="img-fluid" width="25px"> Google được sinh ra để làm tiếp nhiệm vụ thiên liêng và cao cả này <img src="images/e/6.png" class="img-fluid" width="25px"> </span>
+                                        <br>
+                                        <span>Fighting! <img src="images/e/8.png" class="img-fluid" width="25px"></span>
+                                        
+                                        <div class="step-actions">
                                             <button class="waves-effect waves-dark btn previous-step">BACK</button>
                                         </div>
                                     </div>
@@ -688,6 +842,13 @@
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://unpkg.com/materialize-stepper@3.1.0/dist/js/mstepper.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/xml/xml.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/javascript/javascript.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.57.0/mode/javascript/javascript.min.js'></script>
+    <script src='lib/codemirror/autorefresh.js'></script>
+    <script src='lib/codemirror/simplescrollbars.js'></script>
     <script>
     function copyToClipboard(element) {
         var $temp = $("<input>");
@@ -717,7 +878,31 @@
     var stepperInstace = new MStepper(stepper, {
         firstActive: 0,
         stepTitleNavigation: true,
-    })
+    });
+
+    $(document).ready(function() {
+        var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+            lineNumbers: true,
+            mode: 'javascript',
+            theme: 'material-darker',
+            autoRefresh:true,
+            scrollbarStyle: 'overlay'
+        });
+        var editor2 = CodeMirror.fromTextArea(document.getElementById("code2"), {
+            lineNumbers: true,
+            mode: 'javascript',
+            theme: 'material-darker',
+            autoRefresh:true,
+            scrollbarStyle: 'overlay'
+        });
+        var editor3 = CodeMirror.fromTextArea(document.getElementById("code3"), {
+            lineNumbers: true,
+            mode: 'javascript',
+            theme: 'material-darker',
+            autoRefresh:true,
+            scrollbarStyle: 'overlay'
+        });
+    });
     </script>
 </body>
 
