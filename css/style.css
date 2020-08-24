@@ -347,8 +347,7 @@ a:active {
 .site-service-item .icon {
     display: block;
     margin-bottom: 50px;
-    background: #edf0f2;
-    background: #bac964;
+    background: transparent;
     width: 100px;
     height: 100px;
     position: relative;
