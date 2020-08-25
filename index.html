@@ -236,7 +236,7 @@
                         <p class="text-white">
                             Cái này cũng để phân tích sửa lỗi, nó với TSLint mà song kiếm hợp bích là chuẩn bài để code rồi <img src="images/e/3.png" class="img-fluid" width="25px">
                         </p>
-                        <span class="text-white"><i class="fas fa-circle-notch fa-spin"></i> Cách dùng: </span> <a href="#"><span class="text-warning">Cũng xem cái này nè! </span></a><img src="images/e/7.png" class="img-fluid" width="25px">
+                        <span class="text-white"><i class="fas fa-circle-notch fa-spin"></i> Cách dùng: </span> <a href="#tslint"><span class="text-warning">Cũng xem cái này nè! </span></a><img src="images/e/7.png" class="img-fluid" width="25px">
                         <p style="margin-bottom: 0.3em"></p>
                     </div>
                 </div>
@@ -665,6 +665,70 @@ export class AppRoutingModule { }
                         <p class="text-white font-weight-bold mb-3">Vì thế khi viết css phải đi từ <span class="text-warning">Class Cha</span> <i class="fas fa-long-arrow-alt-right"></i> <span class="text-danger">Class Con</span> <i class="fas fa-long-arrow-alt-right"></i> <span class="text-success">Class Cháu</span></p>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="resume-item mb-4">
+                        <span class="school mb-3">
+                            <h4><img src="images/e/3.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;"> NPM</h4>
+                        </span>
+                        <p class="text-white">Có thể cài các package cho Angular thông qua các gói của npm.</p>
+                        <p class="text-white">Tuy nhiên không phải package nào cũng xài được <img src="images/e/10.png" class="img-fluid" width="25px"></p>
+                        <p class="text-white">Tìm các package tại đây: <a href="https://www.npmjs.com/search?q=angular">https://www.npmjs.com/search?q=angular</a></p>
+                        <img src="images/2.jpg" alt="Image placeholder" class="img-fluid mb-4">
+                        <p class="text-white mb-3">Thường là các package sau khi cài sẽ có yêu cầu <span class="text-warning">Import module vào đâu đó.</span> Thì nơi để import module đó là <span class="text-warning">\src\app\shared\shared.module.ts</span> bởi các module khi tạo đều đã được import SharedModule (<a href="#step-3">Bước 3</a>)</p>
+                        <hr>
+                        <p class="text-white">VD Thêm package này: <a href="https://www.npmjs.com/package/ngx-pagination">https://www.npmjs.com/package/ngx-pagination</a></p>
+                        <p class="text-white">Trong mẫu hướng dẫn có yêu cầu thêm module vào file app.module.ts, nhưng với project này ta thêm nó vào shared.module.ts</p>
+                        <p class="text-warning mt-3 mb-2"><i class="fas fa-file-invoice"></i> shared.module.ts</p>
+                        <div class="code-container">
+                            <textarea id="code4">
+import { NgModule } from '@angular/core';
+import { MaterialModule } from './material.module';
+import { SilentCheckSsoComponent } from './components/silent-check-sso/silent-check-sso.component';
+import { CustomSnackbarComponent } from './components/custom-snackbar/custom-snackbar.component';
+
+// Module mới
+import { NgxPaginationModule } from 'ngx-pagination';
+
+@NgModule({
+    declarations: [
+    SilentCheckSsoComponent,
+    CustomSnackbarComponent
+    ],
+    imports: [
+    MaterialModule,
+
+    // Thêm tại đây
+    NgxPaginationModule,
+    ],
+    exports: [
+    MaterialModule,
+
+    // Thêm tại đây nữa
+    NgxPaginationModule,
+    ]
+})
+export class SharedModule { }
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="resume-item mb-4" id="tslint">
+                        <span class="school mb-3">
+                            <h4><img src="images/e/4.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;"> Các lỗi thường gặp</h4>
+                        </span>
+                        
+                        <h3>1. Appears in the ngmodule.imports of ...</h3>
+                        <span class="text-white">Không thể phân tích module.</span>
+                        <img src="images/3.jpg" alt="Image placeholder" class="img-fluid mb-4">
+                        <span class="text-warning">Cách giải quyết: <span class="text-white">Tắt và chạy lại web</span></span>
+                        <hr>
+                        <h3>2. Lỗi khi copy lại phân trang từ module khác</h3>
+                        <img src="images/5.jpg" alt="Image placeholder" class="img-fluid mb-4" width="100%">
+                        <span class="text-warning mb-3">Cách giải quyết: <span class="text-white">Đổi id của pagination</span></span>
+                        <img src="images/4.jpg" alt="Image placeholder" class="img-fluid mb-4 mt-3">
+                        <center><span class="text-warning">ʕ•́ᴥ•̀ʔっ♡ I LUV U 3000</span></center>
+                </div>
             </div>
         </div>
     </section>
@@ -758,6 +822,13 @@ export class AppRoutingModule { }
             scrollbarStyle: 'overlay'
         });
         var editor3 = CodeMirror.fromTextArea(document.getElementById("code3"), {
+            lineNumbers: true,
+            mode: 'javascript',
+            theme: 'material-darker',
+            autoRefresh: true,
+            scrollbarStyle: 'overlay'
+        });
+        var editor4 = CodeMirror.fromTextArea(document.getElementById("code4"), {
             lineNumbers: true,
             mode: 'javascript',
             theme: 'material-darker',
