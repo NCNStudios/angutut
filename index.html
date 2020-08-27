@@ -14,16 +14,21 @@
     <link rel="stylesheet" href="css/wnoty.css">
     <link rel="stylesheet" href="js/sliding/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet"
+        type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.1.0/dist/css/mstepper.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.css'>
     <link rel='stylesheet' href='lib/codemirror/material-darker.css'>
     <link rel='stylesheet' href='lib/codemirror/simplescrollbars.css'>
+    <link rel='stylesheet' href='lib/countdown/style.css'>
 </head>
 
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="100">
-    <section class="site-hero" style="background-image: url('https://i.pinimg.com/originals/20/f5/35/20f535c616bbe807a1166e5661b396fd.jpg');" id="section-home" data-stellar-background-ratio="0.5">
+    <section class="site-hero"
+        style="background-image: url('https://i.pinimg.com/originals/20/f5/35/20f535c616bbe807a1166e5661b396fd.jpg');"
+        id="section-home" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row intro-text align-items-center justify-content-center">
                 <div class="col-md-10 text-center" style="margin-top: -6em;">
@@ -31,37 +36,37 @@
                     <strong class="d-block text-white text-uppercase letter-spacing">
                         <center>
                             <script type="text/javascript">
-                            farbbibliothek = new Array();
-                            farbbibliothek[0] = new Array("#FF0000", "#FF1100", "#FF2200", "#FF3300", "#FF4400", "#FF5500", "#FF6600", "#FF7700", "#FF8800", "#FF9900", "#FFaa00", "#FFbb00", "#FFcc00", "#FFdd00", "#FFee00", "#FFff00", "#FFee00", "#FFdd00", "#FFcc00", "#FFbb00", "#FFaa00", "#FF9900", "#FF8800", "#FF7700", "#FF6600", "#FF5500", "#FF4400", "#FF3300", "#FF2200", "#FF1100");
-                            farbbibliothek[1] = new Array("#FF0000", "#FF4000", "#FF8000", "#FFC000", "#FFFF00", "#C0FF00", "#80FF00", "#40FF00", "#00FF00", "#00FF40", "#00FF80", "#00FFC0", "#00FFFF", "#00C0FF", "#0080FF", "#0040FF", "#0000FF", "#4000FF", "#8000FF", "#C000FF", "#FF00FF", "#FF00C0", "#FF0080", "#FF0040");
-                            farbbibliothek[2] = new Array("#FF0000", "#EE0000", "#DD0000", "#CC0000", "#BB0000", "#AA0000", "#990000", "#880000", "#770000", "#660000", "#550000", "#440000", "#330000", "#220000", "#110000", "#000000", "#110000", "#220000", "#330000", "#440000", "#550000", "#660000", "#770000", "#880000", "#990000", "#AA0000", "#BB0000", "#CC0000", "#DD0000", "#EE0000");
-                            farben = farbbibliothek[1];
+                                farbbibliothek = new Array();
+                                farbbibliothek[0] = new Array("#FF0000", "#FF1100", "#FF2200", "#FF3300", "#FF4400", "#FF5500", "#FF6600", "#FF7700", "#FF8800", "#FF9900", "#FFaa00", "#FFbb00", "#FFcc00", "#FFdd00", "#FFee00", "#FFff00", "#FFee00", "#FFdd00", "#FFcc00", "#FFbb00", "#FFaa00", "#FF9900", "#FF8800", "#FF7700", "#FF6600", "#FF5500", "#FF4400", "#FF3300", "#FF2200", "#FF1100");
+                                farbbibliothek[1] = new Array("#FF0000", "#FF4000", "#FF8000", "#FFC000", "#FFFF00", "#C0FF00", "#80FF00", "#40FF00", "#00FF00", "#00FF40", "#00FF80", "#00FFC0", "#00FFFF", "#00C0FF", "#0080FF", "#0040FF", "#0000FF", "#4000FF", "#8000FF", "#C000FF", "#FF00FF", "#FF00C0", "#FF0080", "#FF0040");
+                                farbbibliothek[2] = new Array("#FF0000", "#EE0000", "#DD0000", "#CC0000", "#BB0000", "#AA0000", "#990000", "#880000", "#770000", "#660000", "#550000", "#440000", "#330000", "#220000", "#110000", "#000000", "#110000", "#220000", "#330000", "#440000", "#550000", "#660000", "#770000", "#880000", "#990000", "#AA0000", "#BB0000", "#CC0000", "#DD0000", "#EE0000");
+                                farben = farbbibliothek[1];
 
-                            function farbschrift() { for (var b = 0; b < Buchstabe.length; b++) { document.all["a" + b].style.color = farben[b] } farbverlauf() }
+                                function farbschrift() { for (var b = 0; b < Buchstabe.length; b++) { document.all["a" + b].style.color = farben[b] } farbverlauf() }
 
-                            function string2array(b) {
-                                Buchstabe = new Array();
-                                while (farben.length < b.length) { farben = farben.concat(farben) } k = 0;
-                                while (k <= b.length) {
-                                    Buchstabe[k] = b.charAt(k);
-                                    k++
+                                function string2array(b) {
+                                    Buchstabe = new Array();
+                                    while (farben.length < b.length) { farben = farben.concat(farben) } k = 0;
+                                    while (k <= b.length) {
+                                        Buchstabe[k] = b.charAt(k);
+                                        k++
+                                    }
                                 }
-                            }
 
-                            function divserzeugen() { for (var b = 0; b < Buchstabe.length; b++) { document.write("<span id='a" + b + "' class='a" + b + "'>" + Buchstabe[b] + "</span>") } farbschrift() }
-                            var a = 1;
+                                function divserzeugen() { for (var b = 0; b < Buchstabe.length; b++) { document.write("<span id='a" + b + "' class='a" + b + "'>" + Buchstabe[b] + "</span>") } farbschrift() }
+                                var a = 1;
 
-                            function farbverlauf() {
-                                for (var b = 0; b < farben.length; b++) { farben[b - 1] = farben[b] } farben[farben.length - 1] = farben[-1];
-                                setTimeout("farbschrift()", 30)
-                            }
-                            var farbsatz = 1;
+                                function farbverlauf() {
+                                    for (var b = 0; b < farben.length; b++) { farben[b - 1] = farben[b] } farben[farben.length - 1] = farben[-1];
+                                    setTimeout("farbschrift()", 30)
+                                }
+                                var farbsatz = 1;
 
-                            function farbtauscher() { farben = farbbibliothek[farbsatz]; while (farben.length < text.length) { farben = farben.concat(farben) } farbsatz = Math.floor(Math.random() * (farbbibliothek.length - 0.0001)) } setInterval("farbtauscher()", 5000);
+                                function farbtauscher() { farben = farbbibliothek[farbsatz]; while (farben.length < text.length) { farben = farben.concat(farben) } farbsatz = Math.floor(Math.random() * (farbbibliothek.length - 0.0001)) } setInterval("farbtauscher()", 5000);
 
-                            text = "and this is Angular Tutorials Pro Max Ultra Ultimate Plus";
-                            string2array(text);
-                            divserzeugen();
+                                text = "and this is Angular Tutorials Pro Max Ultra Ultimate Plus";
+                                string2array(text);
+                                divserzeugen();
                             //document.write(text);
                             </script>
                         </center>
@@ -98,21 +103,24 @@
                             <li>Kiểm tra phiên bản node: <span class="text-danger">
                                     <div class="code_block">
                                         <span id="cmd-0x">node -v</span>
-                                        <button class="btn_copy" onclick="copyToClipboard('#cmd-0x')"><i class="far fa-copy"></i></button>
+                                        <button class="btn_copy" onclick="copyToClipboard('#cmd-0x')"><i
+                                                class="far fa-copy"></i></button>
                                     </div>
                                 </span>
                             </li>
                             <li>Kiểm tra phiên bản npm: <span class="text-danger">
                                     <div class="code_block">
                                         <span id="cmd-0x1">npm -v</span>
-                                        <button class="btn_copy" onclick="copyToClipboard('#cmd-0x1')"><i class="far fa-copy"></i></button>
+                                        <button class="btn_copy" onclick="copyToClipboard('#cmd-0x1')"><i
+                                                class="far fa-copy"></i></button>
                                     </div>
                                 </span>
                             </li>
                         </ul>
                         <img src="images/3.png" alt="Image placeholder" width="100%" class="img-fluid mb-4">
                         <br>
-                        <cite class="block-47-quote-author text-white">&mdash; Tiếp theo <a href="#b-1-2">1.2. Cài đặt Typescript</a></cite>
+                        <cite class="block-47-quote-author text-white">&mdash; Tiếp theo <a href="#b-1-2">1.2. Cài đặt
+                                Typescript</a></cite>
                     </div>
                 </div>
                 <div class="col-md-6" id="b-1-2">
@@ -121,26 +129,31 @@
                         <span class="date"><i class="fas fa-terminal"></i> Typescript</span>
                         <div class="code_block">
                             <span id="cmd-1">npm install -g typescript</span>
-                            <button class="btn_copy" onclick="copyToClipboard('#cmd-1')"><i class="far fa-copy"></i></button>
+                            <button class="btn_copy" onclick="copyToClipboard('#cmd-1')"><i
+                                    class="far fa-copy"></i></button>
                         </div>
                         <img src="images/4.png" alt="Image placeholder" class="img-fluid mb-3">
-                        <cite class="block-47-quote-author text-white">&mdash; Tiếp theo <a href="#b-1-3">1.3. Cài đặt Angular</a></cite>
+                        <cite class="block-47-quote-author text-white">&mdash; Tiếp theo <a href="#b-1-3">1.3. Cài đặt
+                                Angular</a></cite>
                     </div>
                     <h2 class="mb-3 mt-3" id="b-1-3">1.3. Cài đặt Angular</h2>
                     <div class="resume-item mb-1">
                         <span class="date"><i class="fab fa-angular"></i> Angular</span>
                         <h3>Phiên bản lớn nhất được cài đặt: <span class="text-danger">9.X.X</span></h3>
                         <span class="school">Kiểm tra tại:
-                            <a href="https://npmjs.com/package/@angular/cli?activeTab=versions" target="blank">https://npmjs.com/package/@angular/cli?activeTab=versions</a>
+                            <a href="https://npmjs.com/package/@angular/cli?activeTab=versions"
+                                target="blank">https://npmjs.com/package/@angular/cli?activeTab=versions</a>
                         </span>
                         <div class="v-line"></div>
                         <h3 class="mt-2">Khuyên dùng: <span class="text-danger">v9.1.12</span></h3>
                         <span class="school">
-                            <a href="https://www.npmjs.com/package/@angular/cli/v/9.1.12" target="blank">https://www.npmjs.com/package/@angular/cli/v/9.1.12</a>
+                            <a href="https://www.npmjs.com/package/@angular/cli/v/9.1.12"
+                                target="blank">https://www.npmjs.com/package/@angular/cli/v/9.1.12</a>
                         </span>
                         <div class="code_block">
                             <span id="cmd-2">npm install -g @angular/cli@9.1.12</span>
-                            <button class="btn_copy" onclick="copyToClipboard('#cmd-2')"><i class="far fa-copy"></i></button>
+                            <button class="btn_copy" onclick="copyToClipboard('#cmd-2')"><i
+                                    class="far fa-copy"></i></button>
                         </div>
                     </div>
                     <div class="resume-item mb-1">
@@ -149,13 +162,15 @@
                             <li>Kiểm tra phiên bản node: <span class="text-danger">
                                     <div class="code_block">
                                         <span id="cmd-3">ng v</span>
-                                        <button class="btn_copy" onclick="copyToClipboard('#cmd-3')"><i class="far fa-copy"></i></button>
+                                        <button class="btn_copy" onclick="copyToClipboard('#cmd-3')"><i
+                                                class="far fa-copy"></i></button>
                                     </div>
                                 </span>
                             </li>
                         </ul>
                         <img src="images/5.png" alt="Image placeholder" class="img-fluid mb-4">
-                        <cite class="block-47-quote-author text-white">&mdash; Tiếp theo <a href="#section-editor">2. Text Editor</a></cite>
+                        <cite class="block-47-quote-author text-white">&mdash; Tiếp theo <a href="#section-editor">2.
+                                Text Editor</a></cite>
                     </div>
                     <div class="resume-item">
                         <br>
@@ -200,43 +215,53 @@
                                 Tuy nhiên đối với lập trình Angular thì thí chủ phải dùng VSCode
                             </p>
                             <span class="school">Download em nó tại đây:
-                                <a href="https://code.visualstudio.com/" target="blank">https://code.visualstudio.com/</a>
+                                <a href="https://code.visualstudio.com/"
+                                    target="blank">https://code.visualstudio.com/</a>
                             </span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-12 mb-3">
                     <h2 class="mb-3">2.2. Extension</h2>
-                    <span class="text-white">Gần như là bắt buộc phải cài các extension này để <span class="text-warning">tránh gây bất hoà</span> khi cho người khác đọc code
+                    <span class="text-white">Gần như là bắt buộc phải cài các extension này để <span
+                            class="text-warning">tránh gây bất hoà</span> khi cho người khác đọc code
                         <img src="images/e/3.png" class="img-fluid" width="25px">
                     </span> <br>
-                    <span class="text-white">Phím tắt: <span class="text-warning">Ctrl + Shift + X</span> hoặc click vào icon 4 ô vuông trên thanh công cụ bên trái.
+                    <span class="text-white">Phím tắt: <span class="text-warning">Ctrl + Shift + X</span> hoặc click vào
+                        icon 4 ô vuông trên thanh công cụ bên trái.
                     </span>
                 </div>
                 <div class="col-md-6">
                     <div class="resume-item mb-4">
                         <span class="school mb-3">
                             <h4><i class="fas fa-shapes"></i> SCSS Formatter</h4>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter" target="blank">
+                            <a href="https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter"
+                                target="blank">
                                 Open Marketplace <i class="fas fa-link"></i>
                             </a>
                         </span>
                         <img src="images/7.png" alt="Image placeholder" class="img-fluid mb-4">
-                        <p class="text-white">Nói chung là cái tiện ích này nó giúp cho SCSS gọn gàn hơn, ngay hàng thẳng lối.</p>
-                        <span class="text-white"><i class="far fa-keyboard"></i> Phím tắt: </span><span class="text-warning"> Alt + Shift + F</span>
+                        <p class="text-white">Nói chung là cái tiện ích này nó giúp cho SCSS gọn gàn hơn, ngay hàng
+                            thẳng lối.</p>
+                        <span class="text-white"><i class="far fa-keyboard"></i> Phím tắt: </span><span
+                            class="text-warning"> Alt + Shift + F</span>
                     </div>
                     <div class="resume-item mb-4">
                         <span class="school mb-3">
                             <h4><i class="fas fa-shapes"></i> ESLint</h4>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="blank">
+                            <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint"
+                                target="blank">
                                 Open Marketplace <i class="fas fa-link"></i>
                             </a>
                         </span>
                         <img src="images/9.png" alt="Image placeholder" class="img-fluid mb-4">
                         <p class="text-white">
-                            Cái này cũng để phân tích sửa lỗi, nó với TSLint mà song kiếm hợp bích là chuẩn bài để code rồi <img src="images/e/3.png" class="img-fluid" width="25px">
+                            Cái này cũng để phân tích sửa lỗi, nó với TSLint mà song kiếm hợp bích là chuẩn bài để code
+                            rồi <img src="images/e/3.png" class="img-fluid" width="25px">
                         </p>
-                        <span class="text-white"><i class="fas fa-circle-notch fa-spin"></i> Cách dùng: </span> <a href="#tslint"><span class="text-warning">Cũng xem cái này nè! </span></a><img src="images/e/7.png" class="img-fluid" width="25px">
+                        <span class="text-white"><i class="fas fa-circle-notch fa-spin"></i> Cách dùng: </span> <a
+                            href="#tslint"><span class="text-warning">Cũng xem cái này nè! </span></a><img
+                            src="images/e/7.png" class="img-fluid" width="25px">
                         <p style="margin-bottom: 0.3em"></p>
                     </div>
                 </div>
@@ -244,7 +269,8 @@
                     <div class="resume-item mb-4">
                         <span class="school mb-3">
                             <h4><i class="fas fa-shapes"></i> TSLint</h4>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin" target="blank">
+                            <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin"
+                                target="blank">
                                 Open Marketplace <i class="fas fa-link"></i>
                             </a>
                         </span>
@@ -255,28 +281,34 @@
                             . Đưa code cho người khác đọc thì
                             <img src="images/e/5.png" class="img-fluid" width="25px">
                         </p>
-                        <span class="text-white"><i class="fas fa-circle-notch fa-spin"></i> Cách dùng: </span> <a href="#tslint"><span class="text-warning">Xem cái này nè!</span></a>
+                        <span class="text-white"><i class="fas fa-circle-notch fa-spin"></i> Cách dùng: </span> <a
+                            href="#tslint"><span class="text-warning">Xem cái này nè!</span></a>
                     </div>
                     <div class="resume-item mb-4">
                         <span class="school mb-3">
                             <h4><i class="fas fa-shapes"></i> Material Icon Theme</h4>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="blank">
+                            <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme"
+                                target="blank">
                                 Open Marketplace <i class="fas fa-link"></i>
                             </a>
                         </span>
                         <img src="images/10.png" alt="Image placeholder" class="img-fluid mb-4">
                         <p class="text-white">
-                            Cái này để thay đổi icon của file trên cây thư mục cho dễ nhận biết thui. Không cài cũng được
+                            Cái này để thay đổi icon của file trên cây thư mục cho dễ nhận biết thui. Không cài cũng
+                            được
                             <img src="images/e/1.png" class="img-fluid" width="25px">
                         </p>
-                        <span class="text-white"><i class="fas fa-circle-notch fa-spin"></i> Cách dùng: </span><span class="text-warning">Làm gì có cách dùng <img src="images/e/6.png" class="img-fluid" width="25px"></span>
+                        <span class="text-white"><i class="fas fa-circle-notch fa-spin"></i> Cách dùng: </span><span
+                            class="text-warning">Làm gì có cách dùng <img src="images/e/6.png" class="img-fluid"
+                                width="25px"></span>
                     </div>
                 </div>
             </div>
         </div>
     </section> <!-- .section -->
     <div class="section-heading pt-0 text-center">
-        <h2>Các bước cài đặt đến đây là hết! Chúc bạn may mắn lần sau <img src="images/e/6.png" class="img-fluid" width="35px"></h2>
+        <h2>Các bước cài đặt đến đây là hết! Chúc bạn may mắn lần sau <img src="images/e/6.png" class="img-fluid"
+                width="35px"></h2>
     </div>
     <section class="site-section" id="section-project">
         <div class="container">
@@ -303,7 +335,8 @@
                         Lên Google tìm cách nhé! Cơ mà tặng cho cái link luôn này:
                     </p>
                     <span class="school">
-                        <a href="https://www.google.com/search?q=angular+material" target="blank">https://www.google.com/search?q=angular+material</a>
+                        <a href="https://www.google.com/search?q=angular+material"
+                            target="blank">https://www.google.com/search?q=angular+material</a>
                         <img src="images/e/8.png" class="img-fluid" width="25px">
                     </span>
                 </div>
@@ -311,7 +344,8 @@
             <div class="row">
                 <div class="col-md-12 mb-3">
                     <h2 class="mb-3">3.2. Project Angular có sẵn</h2>
-                    <span class="text-white">Có thể clone source từ nguồn chính thống (Gitlab) hoặc download file source nhờ vào mối quan hệ thân thiết mà xin chui được
+                    <span class="text-white">Có thể clone source từ nguồn chính thống (Gitlab) hoặc download file source
+                        nhờ vào mối quan hệ thân thiết mà xin chui được
                         <img src="images/e/1.png" class="img-fluid" width="25px">
                     </span>
                 </div>
@@ -321,7 +355,8 @@
                             <h4><i class="fas fa-code-branch"></i> Cấu trúc source gốc</h4>
                         </span>
                         <img src="images/12.png" alt="Image placeholder" class="img-fluid mb-4">
-                        <span class="text-white"><i class="fas fa-info-circle"></i> Không có thư mục</span><span class="text-warning"> node_modules</span>
+                        <span class="text-white"><i class="fas fa-info-circle"></i> Không có thư mục</span><span
+                            class="text-warning"> node_modules</span>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -330,9 +365,13 @@
                             <h4><i class="fas fa-folder-open"></i> Cây thư mục và chức năng của ẻm</h4>
                         </span>
                         <ul>
-                            <li class="text-white"><b class="text-warning">e2e: </b>Thư mục chứa các file test... <span class="text-warning">Không cần quan tâm</span></li>
-                            <li class="text-white"><b class="text-warning">src: </b>Tất nhiên là chứa source code rồi... <span class="text-warning">Đặc biệt quan tâm </span></li>
-                            <li class="text-white"><b class="text-warning">package.json: </b>Chứa thông tin phiên bản cài đặt của các package npm... <span class="text-warning">Quan tâm tí tẹo thôi</span></li>
+                            <li class="text-white"><b class="text-warning">e2e: </b>Thư mục chứa các file test... <span
+                                    class="text-warning">Không cần quan tâm</span></li>
+                            <li class="text-white"><b class="text-warning">src: </b>Tất nhiên là chứa source code rồi...
+                                <span class="text-warning">Đặc biệt quan tâm </span></li>
+                            <li class="text-white"><b class="text-warning">package.json: </b>Chứa thông tin phiên bản
+                                cài đặt của các package npm... <span class="text-warning">Quan tâm tí tẹo thôi</span>
+                            </li>
                             <li class="text-white"><b class="text-warning">Các file còn lại… </b>kệ nó đi
                                 <img src="images/e/9.png" class="img-fluid" width="25px">
                             </li>
@@ -343,7 +382,8 @@
                         <br>
                         <br>
                         <span>
-                            <i class="fas fa-hand-point-left"></i> Chổ này lại là để cho nó bằng cái block bên trái nữa thôi đó mà
+                            <i class="fas fa-hand-point-left"></i> Chổ này lại là để cho nó bằng cái block bên trái nữa
+                            thôi đó mà
                             <img src="images/e/1.png" class="img-fluid" width="25px">
                         </span>
                         <br>
@@ -355,26 +395,34 @@
                 <div class="col-md-12">
                     <div class="resume-item mb-4">
                         <span class="school mb-4">
-                            <h4><i class="fab fa-osi fa-spin"></i> Thư mục <span class="text-warning">src</span> và đàn em của nó</h4>
+                            <h4><i class="fab fa-osi fa-spin"></i> Thư mục <span class="text-warning">src</span> và đàn
+                                em của nó</h4>
                         </span>
-                        <img src="images/Untitled Diagram.svg" alt="Image placeholder" class="img-fluid mb-4" width="100%">
+                        <img src="images/Untitled Diagram.svg" alt="Image placeholder" class="img-fluid mb-4"
+                            width="100%">
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="resume-item mb-2">
                         <span class="school mb-4">
-                            <h4><i class="fas fa-cog fa-spin"></i> Cài đặt lại thư mục <span class="text-warning">node_modules</span></h4>
+                            <h4><i class="fas fa-cog fa-spin"></i> Cài đặt lại thư mục <span
+                                    class="text-warning">node_modules</span></h4>
                         </span>
-                        <span class="text-white mb-2">Thư mục node_modules có dung lượng rất lớn so với toàn bộ dung lượng của source code. Mũ 2 source lên rồi nhân cho 100 nhiều khi còn không bằng <img src="images/e/10.png" class="img-fluid" width="25px"></span>
+                        <span class="text-white mb-2">Thư mục node_modules có dung lượng rất lớn so với toàn bộ dung
+                            lượng của source code. Mũ 2 source lên rồi nhân cho 100 nhiều khi còn không bằng <img
+                                src="images/e/10.png" class="img-fluid" width="25px"></span>
                         <div class="row">
-                            <img src="images/18.png" alt="Image placeholder" class="img-fluid mb-4 mt-3 col-md-6" width="100%">
+                            <img src="images/18.png" alt="Image placeholder" class="img-fluid mb-4 mt-3 col-md-6"
+                                width="100%">
                             <div class="col-md-6 mt-2">
                                 <div class="code_block">
                                     <span id="cmd-6">npm install</span>
-                                    <button class="btn_copy" onclick="copyToClipboard('#cmd-6')"><i class="far fa-copy"></i></button>
+                                    <button class="btn_copy" onclick="copyToClipboard('#cmd-6')"><i
+                                            class="far fa-copy"></i></button>
                                 </div>
                                 <p class="text-white mt-3">Thư mục sau khi thực hiện:</p>
-                                <img src="images/19.png" alt="Image placeholder" class="img-fluid mb-4 mt-1" width="100%">
+                                <img src="images/19.png" alt="Image placeholder" class="img-fluid mb-4 mt-1"
+                                    width="100%">
                             </div>
                         </div>
                     </div>
@@ -382,42 +430,52 @@
                 <div class="col-md-12">
                     <div class="resume-item mb-2">
                         <span class="school mb-4">
-                            <h4><i class="fab fa-chrome fa-spin"></i> Chạy <span class="text-warning">website</span></h4>
+                            <h4><i class="fab fa-chrome fa-spin"></i> Chạy <span class="text-warning">website</span>
+                            </h4>
                         </span>
-                        <span class="text-white mb-2">Sau khi tạo lại thư mục node_modules, có thể chạu ngay web lên mà không cần suy nghĩ <img src="images/e/10.png" class="img-fluid" width="25px"></span>
+                        <span class="text-white mb-2">Sau khi tạo lại thư mục node_modules, có thể chạu ngay web lên mà
+                            không cần suy nghĩ <img src="images/e/10.png" class="img-fluid" width="25px"></span>
                         <center>
                             <img src="images/20.png" alt="Image placeholder" class="img-fluid mb-4 mt-3" width="70%">
-                        </center>                        
+                        </center>
                         <div class=" mt-2">
                             <h3>Build web dạng thường</h3>
                             <div class="code_block">
                                 <span id="cmd-7">ng serve --open</span>
-                                <button class="btn_copy" onclick="copyToClipboard('#cmd-7')"><i class="far fa-copy"></i></button>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-7')"><i
+                                        class="far fa-copy"></i></button>
                             </div>
                             <span class="pt-3">Trong đó:</span>
                             <ul>
-                                <li class="text-white"><span class="text-warning">--open: </span> Tự động mở website sau khi build xong</li>
+                                <li class="text-white"><span class="text-warning">--open: </span> Tự động mở website sau
+                                    khi build xong</li>
                             </ul>
                             <br>
                             <h3>Build web ở port khác (Mặc định port 4200)</h3>
                             <div class="code_block">
                                 <span id="cmd-9">ng serve --port 1234 --open</span>
-                                <button class="btn_copy" onclick="copyToClipboard('#cmd-9')"><i class="far fa-copy"></i></button>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-9')"><i
+                                        class="far fa-copy"></i></button>
                             </div>
                             <br>
                             <h3>Build web theo ngôn ngữ</h3>
                             <div class="code_block">
                                 <span id="cmd-10">ng serve --configuration=production-vi --port 4200 --open</span>
-                                <button class="btn_copy" onclick="copyToClipboard('#cmd-10')"><i class="far fa-copy"></i></button>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-10')"><i
+                                        class="far fa-copy"></i></button>
                             </div>
                             <div class="code_block">
                                 <span id="cmd-11">ng serve --configuration=production-en --port 4200 --open</span>
-                                <button class="btn_copy" onclick="copyToClipboard('#cmd-11')"><i class="far fa-copy"></i></button>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-11')"><i
+                                        class="far fa-copy"></i></button>
                             </div>
                             <span class="pt-3">Trong đó:</span>
                             <ul>
-                                <li class="text-white"><span class="text-warning">--configuration=production-vi: </span> Build web với ngôn ngữ tiếng việt (Link web sẽ thành: http://localhost:4200/vi/)</li>
-                                <li class="text-white"><span class="text-warning">--configuration=production-en: </span> Build web với ngôn ngữ tiếng anh (Link web sẽ thành: http://localhost:4200/en/)</li>
+                                <li class="text-white"><span class="text-warning">--configuration=production-vi: </span>
+                                    Build web với ngôn ngữ tiếng việt (Link web sẽ thành: http://localhost:4200/vi/)
+                                </li>
+                                <li class="text-white"><span class="text-warning">--configuration=production-en: </span>
+                                    Build web với ngôn ngữ tiếng anh (Link web sẽ thành: http://localhost:4200/en/)</li>
                             </ul>
                         </div>
                     </div>
@@ -425,17 +483,22 @@
                 <div class="col-md-12">
                     <div class="resume-item mb-2">
                         <span class="school mb-4">
-                            <h4><i class="fas fa-plus-circle fa-spin"></i> Thêm một <span class="text-warning">trang</span> mới</h4>
+                            <h4><i class="fas fa-plus-circle fa-spin"></i> Thêm một <span
+                                    class="text-warning">trang</span> mới</h4>
                             <h3>Các bước tạo module chức năng mới:</h3>
                             <ul class="stepper vertical">
                                 <li class="step" id="step-1">
-                                    <div class="step-title waves-effect">Tạo <span class="text-warning">module</span></div>
+                                    <div class="step-title waves-effect">Tạo <span class="text-warning">module</span>
+                                    </div>
                                     <div class="step-content">
                                         <span>Vị trí thư mục: </span><span class="text-warning">/app/modules</span>
                                         <div class="code_block">
                                             <span id="cmd-4" class="d-none">ng g m modules/abcd --routing</span>
-                                            <span>ng g <span class="text-warning font-weight-bold">m </span> modules/<span class="text-warning font-weight-bold">abcd</span> --routing</span>
-                                            <a class="btn_copy pt-1" onclick="copyToClipboard('#cmd-4')"><i class="far fa-copy"></i></a>
+                                            <span>ng g <span class="text-warning font-weight-bold">m </span>
+                                                modules/<span class="text-warning font-weight-bold">abcd</span>
+                                                --routing</span>
+                                            <a class="btn_copy pt-1" onclick="copyToClipboard('#cmd-4')"><i
+                                                    class="far fa-copy"></i></a>
                                         </div>
                                         <span class="pt-3">Trong đó:</span>
                                         <ul>
@@ -444,24 +507,31 @@
                                             <li>● <span class="text-warning">m: </span> module</li>
                                             <li>● <span class="text-warning">modules/: </span> Thư mục modules</li>
                                             <li>● <span class="text-warning">abcd: </span> Tên module</li>
-                                            <li>● <span class="text-warning">--routing: </span> Tuỳ chọn tạo route cho module (Tuỳ chọn này sẽ tạo ra 2 file: abcd.module.ts & abcd-routing.module.ts)</li>
+                                            <li>● <span class="text-warning">--routing: </span> Tuỳ chọn tạo route cho
+                                                module (Tuỳ chọn này sẽ tạo ra 2 file: abcd.module.ts &
+                                                abcd-routing.module.ts)</li>
                                         </ul>
-                                        <img src="images/14.png" alt="Image placeholder" class="img-fluid mb-4 mt-3" width="100%">
+                                        <img src="images/14.png" alt="Image placeholder" class="img-fluid mb-4 mt-3"
+                                            width="100%">
                                         <p>Thư mục sau khi thực hiện:</p>
                                         <img src="images/15.png" alt="Image placeholder" class="img-fluid mb-4 mt-1">
                                         <div class="step-actions">
-                                            <button class="waves-effect waves-dark btn next-step" onclick="scrollToId('#step-1')">CONTINUE</button>
+                                            <button class="waves-effect waves-dark btn next-step"
+                                                onclick="scrollToId('#step-1')">CONTINUE</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="step" id="step-2">
-                                    <div class="step-title waves-effect">Tạo <span class="text-warning">component</span></div>
+                                    <div class="step-title waves-effect">Tạo <span class="text-warning">component</span>
+                                    </div>
                                     <div class="step-content">
                                         <span>Vị trí thư mục: </span><span class="text-warning">/app/modules</span>
                                         <div class="code_block">
                                             <span id="cmd-5" class="d-none">ng g c modules/abcd</span>
-                                            <span>ng g <span class="text-warning font-weight-bold">c </span> modules/<span class="text-warning font-weight-bold">abcd</span></span>
-                                            <a class="btn_copy pt-1" onclick="copyToClipboard('#cmd-5')"><i class="far fa-copy"></i></a>
+                                            <span>ng g <span class="text-warning font-weight-bold">c </span>
+                                                modules/<span class="text-warning font-weight-bold">abcd</span></span>
+                                            <a class="btn_copy pt-1" onclick="copyToClipboard('#cmd-5')"><i
+                                                    class="far fa-copy"></i></a>
                                         </div>
                                         <span class="pt-3">Trong đó:</span>
                                         <ul>
@@ -471,17 +541,20 @@
                                             <li>● <span class="text-warning">modules/: </span> Thư mục modules</li>
                                             <li>● <span class="text-warning">abcd: </span> Tên module</li>
                                         </ul>
-                                        <img src="images/16.png" alt="Image placeholder" class="img-fluid mb-4 mt-3" width="100%">
+                                        <img src="images/16.png" alt="Image placeholder" class="img-fluid mb-4 mt-3"
+                                            width="100%">
                                         <p>Thư mục sau khi thực hiện:</p>
                                         <img src="images/17.png" alt="Image placeholder" class="img-fluid mb-4 mt-1">
                                         <div class="step-actions">
                                             <button class="waves-effect waves-dark btn previous-step">BACK</button>
-                                            <button class="waves-effect waves-dark btn next-step" onclick="scrollToId('#step-2')">CONTINUE</button>
+                                            <button class="waves-effect waves-dark btn next-step"
+                                                onclick="scrollToId('#step-2')">CONTINUE</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="step" id="step-3">
-                                    <div class="step-title waves-effect">Edit file <span class="text-warning">abcd.module.ts</span></div>
+                                    <div class="step-title waves-effect">Edit file <span
+                                            class="text-warning">abcd.module.ts</span></div>
                                     <div class="step-content">
                                         <div class="code-container">
                                             <textarea id="code">
@@ -511,12 +584,14 @@ export class AbcdModule { }
                                         </div>
                                         <div class="step-actions">
                                             <button class="waves-effect waves-dark btn previous-step">BACK</button>
-                                            <button class="waves-effect waves-dark btn next-step" onclick="scrollToId('#step-3')">CONTINUE</button>
+                                            <button class="waves-effect waves-dark btn next-step"
+                                                onclick="scrollToId('#step-3')">CONTINUE</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="step" id="step-4">
-                                    <div class="step-title waves-effect">Edit file <span class="text-warning">abcd-routing.module.ts</span></div>
+                                    <div class="step-title waves-effect">Edit file <span
+                                            class="text-warning">abcd-routing.module.ts</span></div>
                                     <div class="step-content">
                                         <div class="code-container">
                                             <textarea id="code2">
@@ -565,14 +640,17 @@ export class AbcdRoutingModule { }
                                         </div>
                                         <div class="step-actions">
                                             <button class="waves-effect waves-dark btn previous-step">BACK</button>
-                                            <button class="waves-effect waves-dark btn next-step" onclick="scrollToId('#step-4')">CONTINUE</button>
+                                            <button class="waves-effect waves-dark btn next-step"
+                                                onclick="scrollToId('#step-4')">CONTINUE</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="step" id="step-5">
-                                    <div class="step-title waves-effect">Edit file <span class="text-warning">app-routing.module.ts</span></div>
+                                    <div class="step-title waves-effect">Edit file <span
+                                            class="text-warning">app-routing.module.ts</span></div>
                                     <div class="step-content">
-                                        <span>File <span class="text-warning">app-routing.module.ts</span> là file định nghĩa tất cả các route cho website.</span>
+                                        <span>File <span class="text-warning">app-routing.module.ts</span> là file định
+                                            nghĩa tất cả các route cho website.</span>
                                         <div class="code-container mt-3">
                                             <textarea id="code3">
 import { NgModule } from '@angular/core';
@@ -601,17 +679,26 @@ export class AppRoutingModule { }
 
                                             </textarea>
                                         </div>
-                                        <span>Sau khi thực hiện bước này, truy cập thử vào route đã chọn: <span class="text-warning">http://localhost:4200/abcd</span> để xem kết quả. Nếu website hiển thị: <span class="text-warning">abcd works!</span> thì cung xỉa, bạn đã hoàn thành! <img src="images/e/2.png" class="img-fluid" width="25px"></span>
+                                        <span>Sau khi thực hiện bước này, truy cập thử vào route đã chọn: <span
+                                                class="text-warning">http://localhost:4200/abcd</span> để xem kết quả.
+                                            Nếu website hiển thị: <span class="text-warning">abcd works!</span> thì cung
+                                            xỉa, bạn đã hoàn thành! <img src="images/e/2.png" class="img-fluid"
+                                                width="25px"></span>
                                         <div class="step-actions">
                                             <button class="waves-effect waves-dark btn previous-step">BACK</button>
-                                            <button class="waves-effect waves-dark btn next-step" onclick="scrollToId('#step-5')">CONTINUE</button>
+                                            <button class="waves-effect waves-dark btn next-step"
+                                                onclick="scrollToId('#step-5')">CONTINUE</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="step" id="step-6">
-                                    <div class="step-title waves-effect">Lập trình <span class="text-warning">time</span></div>
+                                    <div class="step-title waves-effect">Lập trình <span
+                                            class="text-warning">time</span></div>
                                     <div class="step-content">
-                                        <span>Đến bước này thì khó có thể hướng dẫn tường tận nữa bởi mỗi module thì lại lập trình một cách khác nhau <img src="images/e/3.png" class="img-fluid" width="25px"> Google được sinh ra để làm tiếp nhiệm vụ thiên liêng và cao cả này <img src="images/e/6.png" class="img-fluid" width="25px"> </span>
+                                        <span>Đến bước này thì khó có thể hướng dẫn tường tận nữa bởi mỗi module thì lại
+                                            lập trình một cách khác nhau <img src="images/e/3.png" class="img-fluid"
+                                                width="25px"> Google được sinh ra để làm tiếp nhiệm vụ thiên liêng và
+                                            cao cả này <img src="images/e/6.png" class="img-fluid" width="25px"> </span>
                                         <br>
                                         <span>Fighting! <img src="images/e/8.png" class="img-fluid" width="25px"></span>
                                         <div class="step-actions">
@@ -637,47 +724,72 @@ export class AppRoutingModule { }
                 <div class="col-md-6">
                     <div class="resume-item mb-4" id="tslint">
                         <span class="school mb-3">
-                            <h4><img src="images/e/1.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;"> Format code</h4>
+                            <h4><img src="images/e/1.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;">
+                                Format code</h4>
                         </span>
-                        <p class="text-white">Chuyện format code cho nó đẹp là điều không bắt buộc...còn có bị mất tình cảm anh chị em cô dì chú bác gì đó hay không thì mình không khẳng định đâu nhá 
+                        <p class="text-white">Chuyện format code cho nó đẹp là điều không bắt buộc...còn có bị mất tình
+                            cảm anh chị em cô dì chú bác gì đó hay không thì mình không khẳng định đâu nhá
                             <img src="images/e/2.png" class="img-fluid" width="25px">
                         </p>
                         <img src="images/21.png" alt="Image placeholder" class="img-fluid mb-4">
-                        <p class="text-white">Mở code lên mà cả một bầu trời vàng choé như thế này thì dẹp...nghỉ khoẻ <img src="images/e/4.png" class="img-fluid" width="25px"></p>
+                        <p class="text-white">Mở code lên mà cả một bầu trời vàng choé như thế này thì dẹp...nghỉ khoẻ
+                            <img src="images/e/4.png" class="img-fluid" width="25px"></p>
                         <p class="text-white">Đến đây thì là thời của anh TSLint:</p>
                         <ul>
-                            <li><span class="text-white">B1: Dùng phím tắt<span class="text-warning"> Alt + Shift + F</span> để giải quyết sơ bãi chiến trường.</span></li>
-                            <li><span class="text-white">B2: Tại các dòng còn báo lỗi bấm <span class="text-warning"> Ctr + . (Cần trô chấm)</span> để hiển thị các tuỳ chọn fix.</span></li>
+                            <li><span class="text-white">B1: Dùng phím tắt<span class="text-warning"> Alt + Shift +
+                                        F</span> để giải quyết sơ bãi chiến trường.</span></li>
+                            <li><span class="text-white">B2: Tại các dòng còn báo lỗi bấm <span class="text-warning">
+                                        Ctr + . (Cần trô chấm)</span> để hiển thị các tuỳ chọn fix.</span></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="resume-item mb-4" id="tslint">
-                        <span class="school mb-3">
-                            <h4><img src="images/e/2.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;"> SCSS</h4>
-                        </span>
-                        <p class="text-white">Hiện tại Digo đang dùng Router Angular để chuyển trang mà không load lại. Tốc độ khá nhanh tuy nhiên ở một số trường hợp CSS của trang trước không mất đi mà lại có tác dụng cho cả màn hình sau gây lỗi  
-                            <img src="images/e/11.png" class="img-fluid" width="25px">
-                        </p>
-                        <p class="text-white">Để tương tác với các phần tử Angular, đôi khi phải dùng thẻ <span class="text-warning">::ng-deep</span> .Nhưng khi dùng thẻ này thì tất cả các class (hoặc id) trùng tên đều áp dụng css đó.</p>
-                        <p class="text-white">Ví dụ: Khi dùng <span class="text-warning">::ng-deep .test {color: #ff0000;}</span> thì tất cả các thẻ có class <span class="text-warning">test</span> đều có màu chữ #ff0000</p>
-                        <img src="images/23.png" alt="Image placeholder" class="img-fluid mb-4">
-                        <p class="text-white font-weight-bold mb-3">Vì thế khi viết css phải đi từ <span class="text-warning">Class Cha</span> <i class="fas fa-long-arrow-alt-right"></i> <span class="text-danger">Class Con</span> <i class="fas fa-long-arrow-alt-right"></i> <span class="text-success">Class Cháu</span></p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="resume-item mb-4">
                         <span class="school mb-3">
-                            <h4><img src="images/e/3.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;"> NPM</h4>
+                            <h4><img src="images/e/2.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;">
+                                SCSS</h4>
+                        </span>
+                        <p class="text-white">Hiện tại Digo đang dùng Router Angular để chuyển trang mà không load lại.
+                            Tốc độ khá nhanh tuy nhiên ở một số trường hợp CSS của trang trước không mất đi mà lại có
+                            tác dụng cho cả màn hình sau gây lỗi
+                            <img src="images/e/11.png" class="img-fluid" width="25px">
+                        </p>
+                        <p class="text-white">Để tương tác với các phần tử Angular, đôi khi phải dùng thẻ <span
+                                class="text-warning">::ng-deep</span> .Nhưng khi dùng thẻ này thì tất cả các class (hoặc
+                            id) trùng tên đều áp dụng css đó.</p>
+                        <p class="text-white">Ví dụ: Khi dùng <span class="text-warning">::ng-deep .test {color:
+                                #ff0000;}</span> thì tất cả các thẻ có class <span class="text-warning">test</span> đều
+                            có màu chữ #ff0000</p>
+                        <img src="images/23.png" alt="Image placeholder" class="img-fluid mb-4">
+                        <p class="text-white font-weight-bold mb-3">Vì thế khi viết css phải đi từ <span
+                                class="text-warning">Class Cha</span> <i class="fas fa-long-arrow-alt-right"></i> <span
+                                class="text-danger">Class Con</span> <i class="fas fa-long-arrow-alt-right"></i> <span
+                                class="text-success">Class Cháu</span></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="resume-item mb-4">
+                        <span class="school mb-3">
+                            <h4><img src="images/e/3.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;">
+                                NPM</h4>
                         </span>
                         <p class="text-white">Có thể cài các package cho Angular thông qua các gói của npm.</p>
-                        <p class="text-white">Tuy nhiên không phải package nào cũng xài được <img src="images/e/10.png" class="img-fluid" width="25px"></p>
-                        <p class="text-white">Tìm các package tại đây: <a href="https://www.npmjs.com/search?q=angular">https://www.npmjs.com/search?q=angular</a></p>
+                        <p class="text-white">Tuy nhiên không phải package nào cũng xài được <img src="images/e/10.png"
+                                class="img-fluid" width="25px"></p>
+                        <p class="text-white">Tìm các package tại đây: <a
+                                href="https://www.npmjs.com/search?q=angular">https://www.npmjs.com/search?q=angular</a>
+                        </p>
                         <img src="images/2.jpg" alt="Image placeholder" class="img-fluid mb-4">
-                        <p class="text-white mb-3">Thường là các package sau khi cài sẽ có yêu cầu <span class="text-warning">Import module vào đâu đó.</span> Thì nơi để import module đó là <span class="text-warning">\src\app\shared\shared.module.ts</span> bởi các module khi tạo đều đã được import SharedModule (<a href="#step-3">Bước 3</a>)</p>
+                        <p class="text-white mb-3">Thường là các package sau khi cài sẽ có yêu cầu <span
+                                class="text-warning">Import module vào đâu đó.</span> Thì nơi để import module đó là
+                            <span class="text-warning">\src\app\shared\shared.module.ts</span> bởi các module khi tạo
+                            đều đã được import SharedModule (<a href="#step-3">Bước 3</a>)</p>
                         <hr>
-                        <p class="text-white">VD Thêm package này: <a href="https://www.npmjs.com/package/ngx-pagination">https://www.npmjs.com/package/ngx-pagination</a></p>
-                        <p class="text-white">Trong mẫu hướng dẫn có yêu cầu thêm module vào file app.module.ts, nhưng với project này ta thêm nó vào shared.module.ts</p>
+                        <p class="text-white">VD Thêm package này: <a
+                                href="https://www.npmjs.com/package/ngx-pagination">https://www.npmjs.com/package/ngx-pagination</a>
+                        </p>
+                        <p class="text-white">Trong mẫu hướng dẫn có yêu cầu thêm module vào file app.module.ts, nhưng
+                            với project này ta thêm nó vào shared.module.ts</p>
                         <p class="text-warning mt-3 mb-2"><i class="fas fa-file-invoice"></i> shared.module.ts</p>
                         <div class="code-container">
                             <textarea id="code4">
@@ -713,25 +825,178 @@ export class SharedModule { }
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="resume-item mb-4" id="tslint">
+                    <div class="resume-item mb-4">
                         <span class="school mb-3">
-                            <h4><img src="images/e/4.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;"> Các lỗi thường gặp</h4>
+                            <h4><img src="images/e/4.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;">
+                                Các lỗi thường gặp</h4>
                         </span>
-                        
+
                         <h3>1. Appears in the ngmodule.imports of ...</h3>
                         <span class="text-white">Không thể phân tích module.</span>
                         <img src="images/3.jpg" alt="Image placeholder" class="img-fluid mb-4">
-                        <span class="text-warning">Cách giải quyết: <span class="text-white">Tắt và chạy lại web</span></span>
+                        <span class="text-warning">Cách giải quyết: <span class="text-white">Tắt và chạy lại
+                                web</span></span>
                         <hr>
                         <h3>2. Lỗi khi copy lại phân trang từ module khác</h3>
                         <img src="images/5.jpg" alt="Image placeholder" class="img-fluid mb-4" width="100%">
-                        <span class="text-warning mb-3">Cách giải quyết: <span class="text-white">Đổi id của pagination</span></span>
+                        <span class="text-warning mb-3">Cách giải quyết: <span class="text-white">Đổi id của
+                                pagination</span></span>
                         <img src="images/4.jpg" alt="Image placeholder" class="img-fluid mb-4 mt-3">
-                        <center><span class="text-warning">ʕ•́ᴥ•̀ʔっ♡ I LUV U 3000</span></center>
+                        <center><span style="color: transparent;">...</span></center>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="resume-item mb-4">
+                    <span class="school mb-3">
+                        <h4><img src="images/e/5.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;">
+                            Angular Material</h4>
+                    </span>
+                    <div class="row">
+                        <h3 class="col-md-12">1. Components</h3>
+                        <div class="col-md-6">
+                            <span class="text-white">Thiết kế và cách sử dụng các phần tử theo phong cách Material xem tại: <a href="https://material.angular.io/components/categories" target="blank">https://material.angular.io/components/categories</a></span>
+                        <p class="text-white">( <span class="text-warning"><i class="fas fa-exclamation-triangle"></i> Chú ý: </span> Angular Material chứ không phải <span style="text-decoration: underline;">Angular</span><span class="text-warning" style="text-decoration: underline;">JS</span> Material tại: <a href="https://material.angularjs.org/latest/" target="blank">https://material.angularjs.org/latest/</a> ) </p>
+                        </div>
+                        <img src="images/25.png" alt="Image placeholder" class="img-fluid mb-4 mt-2 col-md-6">
+                    </div>
+                    <div class="row">
+                        <h3 class="col-md-12">2. Icons</h3>
+                        <img src="images/6.jpg" alt="Image placeholder" class="img-fluid mb-4 mt-2 col-md-6">
+                        <div class="col-md-6">
+                            <span class="text-white">Bộ icon của Material xem tại: <a href="https://material.io/resources/icons/?style=baseline" target="blank">https://material.io/resources/icons/?style=baseline</a></span>
+                        <p class="text-white">( <span class="text-warning"> Cách dùng icon: </span> <a href="https://material.angular.io/components/icon/overview" target="blank">https://material.angular.io/components/icon/overview</a> ) </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="resume-item mb-4">
+                    <span class="school mb-3">
+                        <h4><img src="images/e/6.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;">
+                            Hay lắm luôn</h4>
+                    </span>
+                    <span class="text-white">Stackblitz cho phép xây dựng ứng dụng Angular chỉ bằng trình duyệt: <a href="https://stackblitz.com/" target="blank">https://stackblitz.com/</a></span>
+                    <p class="text-white">( <span class="text-warning">Mẹo:</span> Muốn tìm một cái thứ gì đó thì cứ: <span class="text-warning">Angular Material + Từ khoá + Stackblitz</span> mà search! )</p>
+                    <iframe src="https://stackblitz.com/edit/angular-ivy-1mvacu?embed=1&file=src/app/app.component.ts" frameborder="0" width="100%" height="450px"></iframe>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="resume-item mb-4">
+                    <span class="school mb-3">
+                        <h4><img src="images/e/7.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;">
+                            Các package thường dùng</h4>
+                    </span>
+                    <h3>1. Angular Flex-Layout</h3>
+                    <span class="text-white">Package chia layout cho giao diện, reponsive các thứ các thứ: <a href="https://github.com/angular/flex-layout" target="blank">https://github.com/angular/flex-layout</a></span>
+                    <br>
+                    <span class="text-white">Demo: <a href="https://tburleson-layouts-demos.firebaseapp.com/#/docs" target="blank">https://tburleson-layouts-demos.firebaseapp.com/#/docs</a></span>
+                    <h3>2. ...</h3>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="resume-item mb-4">
+                    <center>
+                        <p style="font-size: 25px; position: absolute; left: 0; right: 0; top: 2em; color: #ffffff1c;">Translator tool is coming!</p>
+                    </center>
+                    <div class='wrapper'>
+                        <div class='time-part-wrapper'>
+                          <div class='time-part minutes tens'>
+                            <div class='digit-wrapper'>
+                              <span class='digit'>0</span>
+                              <span class='digit'>5</span>
+                              <span class='digit'>4</span>
+                              <span class='digit'>3</span>
+                              <span class='digit'>2</span>
+                              <span class='digit'>1</span>
+                              <span class='digit'>0</span>
+                            </div>
+                          </div>
+                          <div class='time-part minutes ones'>
+                            <div class='digit-wrapper'>
+                              <span class='digit'>0</span>
+                              <span class='digit'>9</span>
+                              <span class='digit'>8</span>
+                              <span class='digit'>7</span>
+                              <span class='digit'>6</span>
+                              <span class='digit'>5</span>
+                              <span class='digit'>4</span>
+                              <span class='digit'>3</span>
+                              <span class='digit'>2</span>
+                              <span class='digit'>1</span>
+                              <span class='digit'>0</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='time-part-wrapper'>
+                          <div class='time-part seconds tens'>
+                            <div class='digit-wrapper'>
+                              <span class='digit'>0</span>
+                              <span class='digit'>5</span>
+                              <span class='digit'>4</span>
+                              <span class='digit'>3</span>
+                              <span class='digit'>2</span>
+                              <span class='digit'>1</span>
+                              <span class='digit'>0</span>
+                            </div>
+                          </div>
+                          <div class='time-part seconds ones'>
+                            <div class='digit-wrapper'>
+                              <span class='digit'>0</span>
+                              <span class='digit'>9</span>
+                              <span class='digit'>8</span>
+                              <span class='digit'>7</span>
+                              <span class='digit'>6</span>
+                              <span class='digit'>5</span>
+                              <span class='digit'>4</span>
+                              <span class='digit'>3</span>
+                              <span class='digit'>2</span>
+                              <span class='digit'>1</span>
+                              <span class='digit'>0</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='time-part-wrapper'>
+                          <div class='time-part hundredths tens'>
+                            <div class='digit-wrapper'>
+                              <span class='digit'>0</span>
+                              <span class='digit'>9</span>
+                              <span class='digit'>8</span>
+                              <span class='digit'>7</span>
+                              <span class='digit'>6</span>
+                              <span class='digit'>5</span>
+                              <span class='digit'>4</span>
+                              <span class='digit'>3</span>
+                              <span class='digit'>2</span>
+                              <span class='digit'>1</span>
+                              <span class='digit'>0</span>
+                            </div>
+                          </div>
+                          <div class='time-part hundredths ones'>
+                            <div class='digit-wrapper'>
+                              <span class='digit'>0</span>
+                              <span class='digit'>9</span>
+                              <span class='digit'>8</span>
+                              <span class='digit'>7</span>
+                              <span class='digit'>6</span>
+                              <span class='digit'>5</span>
+                              <span class='digit'>4</span>
+                              <span class='digit'>3</span>
+                              <span class='digit'>2</span>
+                              <span class='digit'>1</span>
+                              <span class='digit'>0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <div class="menu-block" style="position: fixed; bottom: 2em; right: 2em; z-index: 99;">
         <nav class="menu-nav">
             <a class="menu-nav__link" href="#section-home">Home</a>
@@ -748,8 +1013,9 @@ export class SharedModule { }
         <div class="container">
             <div class="row mb-2">
                 <p class="col-12 text-center">
-                    Copyright &copy; <script>
-                    document.write(new Date().getFullYear());
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
                     </script> CNStudios all rights reserved
                 </p>
             </div>
@@ -776,66 +1042,66 @@ export class SharedModule { }
     <script src='lib/codemirror/autorefresh.js'></script>
     <script src='lib/codemirror/simplescrollbars.js'></script>
     <script>
-    function copyToClipboard(element) {
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($(element).text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        showNoti($(element).text());
-    }
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+            showNoti($(element).text());
+        }
 
-    function showNoti(text) {
-        $.wnoty({
-            type: 'success',
-            message: 'Copied: ' + text,
-            autohideDelay: 3000
-        });
-    }
+        function showNoti(text) {
+            $.wnoty({
+                type: 'success',
+                message: 'Copied: ' + text,
+                autohideDelay: 3000
+            });
+        }
 
-    function scrollToId(id) {
-        $('html, body').animate({
-            scrollTop: $(id).offset().top
-        }, 300);
-    }
+        function scrollToId(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 300);
+        }
     </script>
     <script>
-    var stepper = document.querySelector('.stepper');
-    var stepperInstace = new MStepper(stepper, {
-        firstActive: 0,
-        stepTitleNavigation: true,
-    });
+        var stepper = document.querySelector('.stepper');
+        var stepperInstace = new MStepper(stepper, {
+            firstActive: 0,
+            stepTitleNavigation: true,
+        });
 
-    $(document).ready(function() {
-        var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-            lineNumbers: true,
-            mode: 'javascript',
-            theme: 'material-darker',
-            autoRefresh: true,
-            scrollbarStyle: 'overlay'
+        $(document).ready(function () {
+            var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+                lineNumbers: true,
+                mode: 'javascript',
+                theme: 'material-darker',
+                autoRefresh: true,
+                scrollbarStyle: 'overlay'
+            });
+            var editor2 = CodeMirror.fromTextArea(document.getElementById("code2"), {
+                lineNumbers: true,
+                mode: 'javascript',
+                theme: 'material-darker',
+                autoRefresh: true,
+                scrollbarStyle: 'overlay'
+            });
+            var editor3 = CodeMirror.fromTextArea(document.getElementById("code3"), {
+                lineNumbers: true,
+                mode: 'javascript',
+                theme: 'material-darker',
+                autoRefresh: true,
+                scrollbarStyle: 'overlay'
+            });
+            var editor4 = CodeMirror.fromTextArea(document.getElementById("code4"), {
+                lineNumbers: true,
+                mode: 'javascript',
+                theme: 'material-darker',
+                autoRefresh: true,
+                scrollbarStyle: 'overlay'
+            });
         });
-        var editor2 = CodeMirror.fromTextArea(document.getElementById("code2"), {
-            lineNumbers: true,
-            mode: 'javascript',
-            theme: 'material-darker',
-            autoRefresh: true,
-            scrollbarStyle: 'overlay'
-        });
-        var editor3 = CodeMirror.fromTextArea(document.getElementById("code3"), {
-            lineNumbers: true,
-            mode: 'javascript',
-            theme: 'material-darker',
-            autoRefresh: true,
-            scrollbarStyle: 'overlay'
-        });
-        var editor4 = CodeMirror.fromTextArea(document.getElementById("code4"), {
-            lineNumbers: true,
-            mode: 'javascript',
-            theme: 'material-darker',
-            autoRefresh: true,
-            scrollbarStyle: 'overlay'
-        });
-    });
     </script>
 </body>
 
