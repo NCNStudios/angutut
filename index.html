@@ -488,6 +488,36 @@
                             <h3>Các bước tạo module chức năng mới:</h3>
                             <ul class="stepper vertical">
                                 <li class="step" id="step-1">
+                                    <div class="step-title waves-effect">Tạo <span class="text-warning">service</span>
+                                    </div>
+                                    <div class="step-content">
+                                        <span>Vị trí thư mục: </span><span class="text-warning">/app/data/service</span>
+                                        <div class="code_block">
+                                            <span id="cmd-4" class="d-none">ng g s data/service/abcd/abcd</span>
+                                            <span>ng g <span class="text-warning font-weight-bold">s </span>
+                                            data/service/<span class="text-warning font-weight-bold">abcd/abcd</span>
+                                                </span>
+                                            <a class="btn_copy pt-1" onclick="copyToClipboard('#cmd-4')"><i
+                                                    class="far fa-copy"></i></a>
+                                        </div>
+                                        <span class="pt-3">Trong đó:</span>
+                                        <ul>
+                                            <li>● <span class="text-warning">ng: </span> Lệnh gọi Angular</li>
+                                            <li>● <span class="text-warning">g: </span> generate</li>
+                                            <li>● <span class="text-warning">s: </span> service</li>
+                                            <li>● <span class="text-warning">data/service/: </span> Thư mục service</li>
+                                            <li>● <span class="text-warning">abcd (1): </span> Tên thư mục chứa service</li>
+                                            <li>● <span class="text-warning">abcd (2): </span> Tên service</li>
+                                        </ul>
+                                        <img src="images/26.png" alt="Image placeholder" class="img-fluid mb-4 mt-3"
+                                            width="100%">
+                                        <div class="step-actions">
+                                            <button class="waves-effect waves-dark btn next-step"
+                                                onclick="scrollToId('#step-1')">CONTINUE</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="step" id="step-2">
                                     <div class="step-title waves-effect">Tạo <span class="text-warning">module</span>
                                     </div>
                                     <div class="step-content">
@@ -516,12 +546,13 @@
                                         <p>Thư mục sau khi thực hiện:</p>
                                         <img src="images/15.png" alt="Image placeholder" class="img-fluid mb-4 mt-1">
                                         <div class="step-actions">
+                                            <button class="waves-effect waves-dark btn previous-step">BACK</button>
                                             <button class="waves-effect waves-dark btn next-step"
                                                 onclick="scrollToId('#step-1')">CONTINUE</button>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="step" id="step-2">
+                                <li class="step" id="step-3">
                                     <div class="step-title waves-effect">Tạo <span class="text-warning">component</span>
                                     </div>
                                     <div class="step-content">
@@ -552,7 +583,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="step" id="step-3">
+                                <li class="step" id="step-4">
                                     <div class="step-title waves-effect">Edit file <span
                                             class="text-warning">abcd.module.ts</span></div>
                                     <div class="step-content">
@@ -589,7 +620,7 @@ export class AbcdModule { }
                                         </div>
                                     </div>
                                 </li>
-                                <li class="step" id="step-4">
+                                <li class="step" id="step-5">
                                     <div class="step-title waves-effect">Edit file <span
                                             class="text-warning">abcd-routing.module.ts</span></div>
                                     <div class="step-content">
@@ -645,7 +676,7 @@ export class AbcdRoutingModule { }
                                         </div>
                                     </div>
                                 </li>
-                                <li class="step" id="step-5">
+                                <li class="step" id="step-6">
                                     <div class="step-title waves-effect">Edit file <span
                                             class="text-warning">app-routing.module.ts</span></div>
                                     <div class="step-content">
@@ -691,7 +722,7 @@ export class AppRoutingModule { }
                                         </div>
                                     </div>
                                 </li>
-                                <li class="step" id="step-6">
+                                <li class="step" id="step-7">
                                     <div class="step-title waves-effect">Lập trình <span
                                             class="text-warning">time</span></div>
                                     <div class="step-content">
