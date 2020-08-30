@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:800");
 html, body {
   cursor: pointer;
+  background-color: #333;
 }
 
 html {
@@ -19,7 +20,7 @@ body {
   font-size: 5vw;
   transform: skewY(-5deg);
   visibility: hidden;
-  color: #002C3E;
+  color: #fff;
   animation: display 1s cubic-bezier(0.6, 0, 0.15, 1) 4s forwards;
   position: relative;
 }
