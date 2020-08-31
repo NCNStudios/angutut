@@ -744,6 +744,81 @@ export class AppRoutingModule { }
             </div>
         </div>
     </section>
+    <section class="site-section pt-0 mb-4" id="section-rules">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-2">
+                    <div class="section-heading text-center">
+                        <h2>Quy định <strong>Project</strong></h2>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-0">
+                    <div class="resume-item mb-4" id="tslint">
+                        <span class="school mb-3">
+                            <h4><img src="images/e/1.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;">
+                                Cấu trúc thư mục</h4>
+                        </span>
+                        <ul class="text-white">
+                            <li>Mỗi route là một module riêng.</li>
+                            <li>Các child route nằm trong thư mục 'pages' của module chính.</li>
+                            <li>Các popup nằm trong thư mục 'dialogs' của module chính (cùng cấp với 'pages').</li>
+                            <li>Ví dụ: Module <span class="text-warning">procedure</span> có các trang con như <span class="text-warning">process, procost,...</span>
+                                <ul>
+                                    <img src="images/27.png" class="img-fluid mb-4 mt-2">
+                                    <li>Trang con <span class="text-warning">process</span> lại có các trang con <span class="text-warning">process-add, process-diagram,...</span>
+                                        <ul>
+                                            <img src="images/28.png" class="img-fluid mb-4 mt-2">
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Mỗi trang con như vậy đều có 2 file <span class="text-warning">.module.ts & routing.module.ts</span></li>
+                            <li>Các dialog không cần 2 file này!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-0">
+                    <div class="resume-item mb-4" id="tslint">
+                        <span class="school mb-3">
+                            <h4><img src="images/e/1.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;">
+                                Lấy thông tin cấu hình</h4>
+                        </span>
+                        <ul class="text-white">
+                            <li>Việc lấy thông tin cầu hình bắt buộc phải sử dụng <span class="text-warning">EnvService</span>, không import trực tiếp file
+                                environment.ts để lấy thông tin cấu hình.
+                                <ul>
+                                    <img src="images/29.png" class="img-fluid mb-4 mt-2">
+                                </ul>
+                            </li>
+                            <li>
+                                Ngoài ra các thông tin cấu hình khác khi khai báo thêm cần phải đặt bên dưới trường config và luôn sử dụng Tiếng Anh.
+                                <ul>
+                                    <img src="images/30.png" class="img-fluid mb-4 mt-2">
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-0">
+                    <div class="resume-item mb-4" id="tslint">
+                        <span class="school mb-3">
+                            <h4><img src="images/e/1.gif" class="img-fluid" width="35px" style="padding-bottom: .2em;">
+                                Đa ngôn ngữ</h4>
+                        </span>
+                        <ul class="text-white">
+                            <li>Khi gọi API cần truyền thông tin languageTag của người dùng vào thuộc tính <span class="text-warning">Accept-Language</span> của Http Request Header.
+                                <ul>
+                                    <span>let headers = new HttpHeaders();</span><br>
+                                    <span>headers = headers.set('Accept-Language', localStorage.getItem('language'));</span>
+                                    <li>Trong đó: <span class="text-warning">localStorage.getItem('language')</span> có thể thay thế bằng 'vi' hoặc 'en'</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <section class="site-section pt-0 pb-0" id="section-tips">
         <div class="container">
             <div class="row">
@@ -926,104 +1001,15 @@ export class SharedModule { }
                     <span class="text-white">Package chia layout cho giao diện, responsive các thứ các thứ: <a href="https://github.com/angular/flex-layout" target="blank">https://github.com/angular/flex-layout</a></span>
                     <br>
                     <span class="text-white">Demo: <a href="https://tburleson-layouts-demos.firebaseapp.com/#/docs" target="blank">https://tburleson-layouts-demos.firebaseapp.com/#/docs</a></span>
-                    <h3>2. ...</h3>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="resume-item mb-4">
-                    <center>
-                        <p style="font-size: 25px; position: absolute; left: 0; right: 0; top: 2em; color: #ffffff1c;">Translation tool is coming!</p>
-                    </center>
-                    <div class='wrapper'>
-                        <div class='time-part-wrapper'>
-                          <div class='time-part minutes tens'>
-                            <div class='digit-wrapper'>
-                              <span class='digit'>0</span>
-                              <span class='digit'>5</span>
-                              <span class='digit'>4</span>
-                              <span class='digit'>3</span>
-                              <span class='digit'>2</span>
-                              <span class='digit'>1</span>
-                              <span class='digit'>0</span>
-                            </div>
-                          </div>
-                          <div class='time-part minutes ones'>
-                            <div class='digit-wrapper'>
-                              <span class='digit'>0</span>
-                              <span class='digit'>9</span>
-                              <span class='digit'>8</span>
-                              <span class='digit'>7</span>
-                              <span class='digit'>6</span>
-                              <span class='digit'>5</span>
-                              <span class='digit'>4</span>
-                              <span class='digit'>3</span>
-                              <span class='digit'>2</span>
-                              <span class='digit'>1</span>
-                              <span class='digit'>0</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class='time-part-wrapper'>
-                          <div class='time-part seconds tens'>
-                            <div class='digit-wrapper'>
-                              <span class='digit'>0</span>
-                              <span class='digit'>5</span>
-                              <span class='digit'>4</span>
-                              <span class='digit'>3</span>
-                              <span class='digit'>2</span>
-                              <span class='digit'>1</span>
-                              <span class='digit'>0</span>
-                            </div>
-                          </div>
-                          <div class='time-part seconds ones'>
-                            <div class='digit-wrapper'>
-                              <span class='digit'>0</span>
-                              <span class='digit'>9</span>
-                              <span class='digit'>8</span>
-                              <span class='digit'>7</span>
-                              <span class='digit'>6</span>
-                              <span class='digit'>5</span>
-                              <span class='digit'>4</span>
-                              <span class='digit'>3</span>
-                              <span class='digit'>2</span>
-                              <span class='digit'>1</span>
-                              <span class='digit'>0</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class='time-part-wrapper'>
-                          <div class='time-part hundredths tens'>
-                            <div class='digit-wrapper'>
-                              <span class='digit'>0</span>
-                              <span class='digit'>9</span>
-                              <span class='digit'>8</span>
-                              <span class='digit'>7</span>
-                              <span class='digit'>6</span>
-                              <span class='digit'>5</span>
-                              <span class='digit'>4</span>
-                              <span class='digit'>3</span>
-                              <span class='digit'>2</span>
-                              <span class='digit'>1</span>
-                              <span class='digit'>0</span>
-                            </div>
-                          </div>
-                          <div class='time-part hundredths ones'>
-                            <div class='digit-wrapper'>
-                              <span class='digit'>0</span>
-                              <span class='digit'>9</span>
-                              <span class='digit'>8</span>
-                              <span class='digit'>7</span>
-                              <span class='digit'>6</span>
-                              <span class='digit'>5</span>
-                              <span class='digit'>4</span>
-                              <span class='digit'>3</span>
-                              <span class='digit'>2</span>
-                              <span class='digit'>1</span>
-                              <span class='digit'>0</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    
+                    <h3 class="mt-3">2. NgxMatSelectSearch</h3>
+                    <span class="text-white">Package tạo combobox với khung tìm kiếm: <a href="https://www.npmjs.com/package/ngx-mat-select-search" target="blank">https://www.npmjs.com/package/ngx-mat-select-search</a></span>
+                    <br>
+                    <span class="text-white">Demo: <a href="https://stackblitz.com/github/bithost-gmbh/ngx-mat-select-search-example?file=src%2Fapp%2Fapp.component.html" target="blank">https://stackblitz.com/github/bithost-gmbh/ngx-mat-select-search-example?file=src%2Fapp%2Fapp.component.html</a></span>
+                    
+                    <h3 class="mt-3">3. Angular Material Table Reponsive</h3>
+                    <span class="text-white">Stackblitz table angular với reponsive: <a href="https://stackblitz.com/edit/angular-material-table-responsive" target="blank">https://stackblitz.com/edit/angular-material-table-responsive</a></span>
+                    
                 </div>
             </div>
         </div>
@@ -1034,7 +1020,9 @@ export class SharedModule { }
             <a class="menu-nav__link" href="#section-installation">Angular Installation</a>
             <a class="menu-nav__link" href="#section-editor">Text Editor</a>
             <a class="menu-nav__link" href="#section-project">Angular Project</a>
-            <a class="menu-nav__link" href="#section-tips">Rules and Tips</a>
+            <a class="menu-nav__link" href="#section-rules">Rules</a>
+            <a class="menu-nav__link" href="#section-tips">Tips</a>
+            <a class="menu-nav__link" href="../i18n">Translation Tool</a>
         </nav>
         <a href="javascript:void(0)" class="menu-btn">
             <span></span>
