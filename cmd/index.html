@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CNStudios</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="images/e/1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/flexslider.css">
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/wnoty.css">
+    <link rel="stylesheet" href="../js/sliding/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.1.0/dist/css/mstepper.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.css'>
+    <link rel='stylesheet' href='../lib/codemirror/material-darker.css'>
+    <link rel='stylesheet' href='../lib/codemirror/simplescrollbars.css'>
+    <link rel='stylesheet' href='../lib/countdown/style.css'>
+</head>
+
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="100">
+    <section class="site-section pt-0" id="section-installation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div class="section-heading text-center">
+                        <h2>Angular <strong>Commands</strong></h2>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="resume-item">
+                        <h3>Kiểm tra phiên bản đã cài đặt:</h3>
+                        <ul>
+                            <li>Kiểm tra phiên bản node: <span class="text-danger">
+                                    <div class="code_block">
+                                        <span id="cmd-0x">node -v</span>
+                                        <button class="btn_copy" onclick="copyToClipboard('#cmd-0x')"><i
+                                                class="far fa-copy"></i></button>
+                                    </div>
+                                </span>
+                            </li>
+                            <li>Kiểm tra phiên bản npm: <span class="text-danger">
+                                    <div class="code_block">
+                                        <span id="cmd-0x1">npm -v</span>
+                                        <button class="btn_copy" onclick="copyToClipboard('#cmd-0x1')"><i
+                                                class="far fa-copy"></i></button>
+                                    </div>
+                                </span>
+                            </li>
+                            <li>Kiểm tra phiên bản angular: <span class="text-danger">
+                                <div class="code_block">
+                                    <span id="cmd-0x5">ng v</span>
+                                    <button class="btn_copy" onclick="copyToClipboard('#cmd-0x5')"><i
+                                            class="far fa-copy"></i></button>
+                                </div>
+                            </span>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="resume-item mt-1">
+                        <h3>Cài đặt Typescript</h3>
+                        <div class="code_block">
+                            <span id="cmd-1">npm install -g typescript</span>
+                            <button class="btn_copy" onclick="copyToClipboard('#cmd-1')"><i
+                                    class="far fa-copy"></i></button>
+                        </div>
+                    </div>
+                    <div class="resume-item mt-1">
+                        <h3>@angular/cli@9.1.12</h3>
+                        <div class="code_block">
+                            <span id="cmd-2">npm install -g @angular/cli@9.1.12</span>
+                            <button class="btn_copy" onclick="copyToClipboard('#cmd-2')"><i
+                                    class="far fa-copy"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-1">
+                    <div class="resume-item mb-2">
+                        <div class=" mt-2">
+                            <h3>Build web dạng thường</h3>
+                            <div class="code_block">
+                                <span id="cmd-7">ng serve --open</span>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-7')"><i
+                                        class="far fa-copy"></i></button>
+                            </div>
+                            <br>
+                            <h3>Build web ở port khác (Mặc định port 4200)</h3>
+                            <div class="code_block">
+                                <span id="cmd-9">ng serve --port 1234 --open</span>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-9')"><i
+                                        class="far fa-copy"></i></button>
+                            </div>
+                            <br>
+                            <h3>Build web theo ngôn ngữ</h3>
+                            <div class="code_block">
+                                <span id="cmd-10">ng serve --configuration=production-vi --port 4200 --open</span>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-10')"><i
+                                        class="far fa-copy"></i></button>
+                            </div>
+                            <div class="code_block">
+                                <span id="cmd-11">ng serve --configuration=production-en --port 4200 --open</span>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-11')"><i
+                                        class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-1">
+                    <div class="resume-item mb-2">
+                        <div class=" mt-2">
+                            <h3>Build file i18n messages.xlf</h3>
+                            <div class="code_block">
+                                <span id="cmd-12">npm run xi18n</span>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-12')"><i
+                                        class="far fa-copy"></i></button>
+                            </div>
+                            <br>
+                            <h3>Build web</h3>
+                            <div class="code_block">
+                                <span id="cmd-13">npm run build-i18n</span>
+                                <button class="btn_copy" onclick="copyToClipboard('#cmd-13')"><i
+                                        class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- .section -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row mb-2">
+                <p class="col-12 text-center">
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> CNStudios all rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/vendor/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../js/vendor/popper.min.js"></script>
+    <script src="../js/vendor/bootstrap.min.js"></script>
+    <script src="../js/vendor/jquery.easing.1.3.js"></script>
+    <script src="../js/vendor/jquery.stellar.min.js"></script>
+    <script src="../js/vendor/jquery.waypoints.min.js"></script>
+    <script src="../js/wnoty.js"></script>
+    <script src="../js/sliding/js/script.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="https://unpkg.com/materialize-stepper@3.1.0/dist/js/mstepper.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/xml/xml.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/javascript/javascript.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.57.0/mode/javascript/javascript.min.js'></script>
+    <script src='../lib/codemirror/autorefresh.js'></script>
+    <script src='../lib/codemirror/simplescrollbars.js'></script>
+    <script>
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+            showNoti($(element).text());
+        }
+
+        function showNoti(text) {
+            $.wnoty({
+                type: 'success',
+                message: 'Copied: ' + text,
+                autohideDelay: 3000
+            });
+        }
+
+        function scrollToId(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 300);
+        }
+    </script>
+    <script>
+        var stepper = document.querySelector('.stepper');
+        var stepperInstace = new MStepper(stepper, {
+            firstActive: 0,
+            stepTitleNavigation: true,
+        });
+
+        $(document).ready(function () {
+            var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+                lineNumbers: true,
+                mode: 'javascript',
+                theme: 'material-darker',
+                autoRefresh: true,
+                scrollbarStyle: 'overlay'
+            });
+            var editor2 = CodeMirror.fromTextArea(document.getElementById("code2"), {
+                lineNumbers: true,
+                mode: 'javascript',
+                theme: 'material-darker',
+                autoRefresh: true,
+                scrollbarStyle: 'overlay'
+            });
+            var editor3 = CodeMirror.fromTextArea(document.getElementById("code3"), {
+                lineNumbers: true,
+                mode: 'javascript',
+                theme: 'material-darker',
+                autoRefresh: true,
+                scrollbarStyle: 'overlay'
+            });
+            var editor4 = CodeMirror.fromTextArea(document.getElementById("code4"), {
+                lineNumbers: true,
+                mode: 'javascript',
+                theme: 'material-darker',
+                autoRefresh: true,
+                scrollbarStyle: 'overlay'
+            });
+        });
+    </script>
+</body>
+
+</html>
